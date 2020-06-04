@@ -397,7 +397,7 @@
     }
     .type{
         top: 2vw;
-       font-size: 20px;
+        font-size: 20px;
     }
     /*section main*/
     .circle{
@@ -406,9 +406,9 @@
     .main p{
         font-size: 3vw;
     }
-    .year{
+    /* .year{
         font-size: 1vw !important;
-    }
+    } */
     .year::before{
         width: 4px;
         height: 4px;
