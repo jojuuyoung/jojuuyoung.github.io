@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주영월드 !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="fullpage.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- fullpage JS -->
+    <script type="text/javascript" src="fullpage.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 75%;
+            height: 75%;
+            background-color: tomato;
+        }
+        #fp-nav{
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- title bar -->
+    <div class="titleBar">
+        <a href="index.html">Jo Young<br>World</a>
+    </div>
+    <!-- //title bar -->
+    <!-- top btn -->
+    <div class="top-btn">
+        <a href="index.html"></a>
+        <span>TOP</span>
+    </div>
+    <!-- //top btn -->
+
+    <!-- fullpage -->
+    <div id="fullpage">
+        <section class="section main">
+            마크업하기
+        </section>
+        <section class="section who">
+            <h2 class="type">WHO</h2>
+            <div class="who_wrap">
+                <p class="about">
+                    <span>조주영 JoJuYoung .920510</span><br>
+                    <span>단국대 경영학과 #웹디자인기능사</span><br>
+                    <span>강남 굿잡아카데이 수료</span><br>
+                    <span>2019.09 ~ 05 웹에이전시 더넷 근무</span>
+                    <span class="mark01">ABOUT JUYOUNG</span>
+                </p>
+            </div>
+        </section>
+        <section class="section skill">
+            <h2 class="type">SKILL</h2>
+            <div class="skill01">
+                <span class="text01">
+                    my skill is<br>
+                    웹표준, 웹접근성 고려 MAKRUP<br>
+                    문서의 구조화<br>
+                    어떠한 브라우저든 CROSSBROWSING<br>
+                    @미디어쿼리와 반응형WEB<br>
+                    효율적인 레이아웃을 구현하는 FLEXBOX<br>
+                    BOOTSTRAP 경험<br>
+                    플러그인 사용
+                </span>
+            </div>
+            <div class="skill02">
+                <span class="sk01">chrome</span>
+                <span class="sk02">github</span>
+                <span class="sk03">Flex</span>
+                <span class="sk04">TAG</span>
+                <span class="sk05">ANIMATION</span>
+                <span class="sk06">CSS</span>
+                <span class="sk07">MEDIA<br>&nbsp;&nbsp;&nbsp;QUERY</span>
+                <span class="sk08">WEB</span>
+                <span class="sk10">HTML</span>
+                <span class="sk11">CROSS<br>&nbsp;&nbsp;&nbsp;BROWSING</span>
+                <span class="sk12">MARKUP</span>
+                <span class="sk13">JQUERY</span>
+                <span class="sk14">IE</span>
+                <span class="sk15">FLEX</span>
+                <span class="sk16">TRANSITION</span>
+                <span class="sk17">SEMANTIC</span>
+                <span class="sk18">BOOTSTRAP</span>
+                <span class="sk19">VSCODE</span>
+            </div>
+        </section>
+        <section class="section project">
+            <h2 class="type">PROJECT</h2>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img">
+                            <img src="img/project01.png" alt="스테이정글 이미지">
+                        </div>
+                        <div class="swiper_txt">
+                            <span class="ptype">project website #01</span>
+                            <span class="tit">STAY JUNGLE</span>
+                            <span class="subtxt">유전자 맞춤 도시락<br>responsive web<br>HTML5<br>CSS3<br>JS</span>
+                            <span class="link"><a href="https://www.stayjungle.com/" alt="스테이정글 바로가기" target="blank"></a></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img">
+                            <!-- <img src="img/.png" alt="한샘이펙스 이미지"> -->
+                            <div class="swiper_txt">
+                                <span class="ptype">copy website #01</span>
+                                <span class="tit">HANSSEM<br>EFFEX</span>
+                                <span class="subtxt">한샘이펙스 Main Page(개인 포트폴리오용)<br>responsive web<br>HTML5<br>CSS3<br>JS</span>
+                                <span class="link"><a href="http://jojuuyoung.dothome.co.kr/" alt="한샘이펙스 바로가기" target="blank"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"><span>다음</span></div>
+                <div class="swiper-button-prev"><span>이전</span></div>
+            </div>
+        </section>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            loop:true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <!-- //Swiper -->
+        <section class="section call">
+            <h2 class="type white">watching for<br>thank you !</h2>
+            <div class="call_wrap">
+                <p>SENDME<a href="" class="hover">&nbsp;EMAIL</a></p>
+                <p><a href="tel:010-2456-3353" class="hover">01024563353</a>&nbsp;CALL</p>
+            </div>
+            <div class="bytag">WebSite by JuYoung</div>
+        </section>
+    </div>
+    <!-- //fullpage -->
+
+    <!-- fullpage script -->
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '',
+	        sectionsColor: ['#daad4d', '#daad4d', '#daad4d', '#daad4d', '#daad4d'],//배경컬러
+            navigation: true,//오른쪽 도트 네비게이션
+            navigationTooltips: ['main','who','skill','site','contact'],//네비게이션 후버 텍스트
+            scrollingSpeed: 1000,//스크롤속도
+            loopBottom: true//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
+            });
+    </script>
+    <!-- //fullpage script -->
+
+</body>
+</html>
