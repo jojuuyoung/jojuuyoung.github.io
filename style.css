@@ -6,7 +6,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(img/noise.png);
+    /* background-image: url(img/noise.png); */
 }
 /* background grid */
 .section::before{
@@ -113,18 +113,7 @@
 
 /* section main */
 .main{
-    position: relative;/**/
-}
-.circle{
-    position: relative;
-    z-index: 9;
-    margin: 0 auto;
-    width: 49vw;
-    height: 100vh;
-    background-image: url(img/circle.png), url(img/imog.png);
-    background-size: 100%, 70%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+    position: relative; /*main p 기준점*/
 }
 .main p{
     position: absolute;
@@ -154,6 +143,18 @@
     bottom: 22vh;
     left: 80vw;;
 }
+.circle{
+    position: relative;
+    z-index: 9;
+    margin: 0 auto;
+    width: 49vw;
+    height: 100vh;
+    background-image: url(img/circle.png), url(img/imog.png);
+    background-size: 100%, 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
 /* //section main */
 
 /* section who */
@@ -401,14 +402,15 @@
     }
     /*section main*/
     .circle{
-        width: 64vw;
+        width: 65vw;
+    }
+    .circle_txt{
+        width: 65vw;
+        font-size: 5.5vw;
     }
     .main p{
         font-size: 3vw;
     }
-    /* .year{
-        font-size: 1vw !important;
-    } */
     .year::before{
         width: 4px;
         height: 4px;
