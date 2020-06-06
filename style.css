@@ -1,14 +1,14 @@
+/* layout common */
 .hide{
     display: none !important;
 }
-/* layout common */
 .section{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(img/noise.png);
+    /* background-image: url(img/noise.png); */
 }
-/* background grid */
+/* 배경 그리드 */
 .section::before{
     content: '';
     display: block;
@@ -16,7 +16,7 @@
     width: 1px;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
-    left: 22vw;
+    left: 23vw;
     top: 0;
 }
 .section::after{
@@ -26,16 +26,16 @@
     width: 1px;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
-    left: 78vw;
+    left: 77vw;
     top: 0;
 }
-/* //background grid */
+/* //배경 그리드 */
 /* //layout common */
 
-/* title bar */
+/* 주영 월드 */
 .titleBar{
     position: fixed;
-    top: 18%;
+    top: 8vw;
     z-index: 9;
     font-size: 0;
 }
@@ -50,13 +50,14 @@
     display: inline-block;
     vertical-align: top;
     color: #000;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 15px;
     line-height: 1;
     padding-left: 7vw;
 }
-/* //title bar */
-/* top btn */
+/* //주영 월드 */
+
+/* top 버튼 */
 .top-btn{
     position: fixed;
     width: 60px;
@@ -66,11 +67,11 @@
     z-index: 9;
 }
 .top-btn a{
-    position: relative;/*top-btn span 기준점*/
+    position: relative;/*.top-btn span 기준점*/
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(img/topbtn03.png);
+    background-image: url(img/top.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: topbtn;
@@ -80,9 +81,7 @@
     transform-origin: 50% 50%;
 }
 @keyframes topbtn{
-    100%{
-        transform: rotate(360deg);
-    }
+    100%{ transform: rotate(360deg); }
 }
 .top-btn span{
     position: absolute;
@@ -94,7 +93,8 @@
     font-size: 14px;
     color: #000;
 }
-/* //top btn */
+/* //top 버튼 */
+
 /* WHO SKILL PROJECT CALL 텍스트 */
 .type{
     position: absolute;
@@ -119,7 +119,7 @@
     position: absolute;
     font-size: 1vw;
     line-height: 1.3;
-    z-index: 9;
+    z-index: 11;
 }
 .year::before{
     content: '';
@@ -230,13 +230,63 @@
 /* //section who */
 
 /* section skill */
+
 /* //section skill */
 
 /* section project */
 .swiper-container {
-    width: 75vw;
-    height: 70vh;
-    /* background-color: rgba(255,255,255,0.4); */
+    width: 100vw;
+    height: 100vh;
+    background-color: rosybrown;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper_txt{
+    position: absolute;
+    bottom: 20%;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.swiper_txt span{
+    display: block;
+    color: #fff;
+    text-align: left;
+}
+.ptype{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.subtit,.tit{
+    font-size: 56px;
+}
+.tit a{
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+.subtxt{
+    margin-top: 15px;
+    opacity: 0.8;
+}
+/* .swiper-container {
+    width: 70vw;
+    height: 65vh;
 }
 .swiper-slide{
     display: flex;
@@ -244,7 +294,7 @@
     overflow: hidden;
 }
 .swiper-slide .img{
-    width: 65%;
+    width: 60%;
     background-color: thistle;
 }
 .swiper-slide .img img{
@@ -252,18 +302,16 @@
     height: 100%;
 }
 .swiper-slide .swiper_txt{
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 100px 60px;
     box-sizing: border-box;
-    text-align: end;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.9);
 }
 .swiper-slide .swiper_txt span{
-    /* color: #fff; */
+    color: #fff;
 }
 .ptype{
     font-size: 20px;
@@ -271,7 +319,7 @@
     display: block;
 }
 .tit{
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 4vw;
     font-weight: 700;
     line-height: 1;
@@ -279,7 +327,11 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
 }
-.tit:hover{
+.tit a{
+    color: #fff;
+}
+.tit a:hover{
+    color: #000;
     -webkit-text-fill-color: #000;
 }
 .subtxt{
@@ -298,7 +350,7 @@
     width: 40px !important;
     height: 44px !important;
     right: 0 !important;
-}
+} */
 /* //section project */
 
 /* section call */
@@ -337,9 +389,9 @@
     font-size: 8vw;
     color: #fff;
 }
-/* .call_wrap p:first-child{
-    font-size: 8.85vw;
-} */
+.call_wrap p:first-child{
+    font-size: 8.2vw;
+}
 .call_wrap .hover{
     font-family: 'Montserratcall', sans-serif;
     cursor: pointer;
@@ -350,9 +402,9 @@
     -webkit-text-stroke-color: #fff;
 }
 .call_wrap .hover:hover{
-    -webkit-text-fill-color: #ed4842;
+    -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: transparent;
-    color: #ed4842;
+    color: #000;
 }
 .bytag::before{
     content: '❤️';
@@ -407,11 +459,11 @@
 
 @media all and (max-width:480px){
 /*가로값이 480px이하 일 때 스타일 적용*/
-    #fp-nav{
+    /* #fp-nav{
         display: none !important;
-    }
+    } */
     .titleBar{
-        top: 14%;
+        top: 25vw
     }
     .titleBar::before{
         height: 33px;
@@ -433,14 +485,14 @@
     }
     /*section main*/
     .circle{
-        width: 65vw;
+        width: 55vw;
     }
     .circle_txt{
         width: 65vw;
         font-size: 5.5vw;
     }
     .main p{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .year::before{
         width: 4px;
@@ -559,4 +611,15 @@
         font-size: 14px;
     }
 
+}
+
+.part-3-header .part-no {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+
+.part-3-header.ani .part-no {
+    opacity: 1
 }
