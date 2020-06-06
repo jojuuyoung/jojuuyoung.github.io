@@ -286,14 +286,22 @@
 .subtit,.tit{
     font-size: 56px;
 }
-.tit a{
+.tit .border{
+    width: auto;
     color: #fff;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
 }
+a.view{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+}
 .subtxt{
     margin-top: 15px;
     opacity: 0.8;
+    line-height: 1.8;
 }
 /* .swiper-container {
     width: 70vw;
