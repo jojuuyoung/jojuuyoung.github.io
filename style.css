@@ -256,6 +256,17 @@
     -webkit-align-items: center;
     align-items: center;
 }
+.swiper-button-prev{
+    bottom: 10% !important;
+    left: 55vw !important;
+    margin-top: 0 !important;
+    /* transform: rotate(90deg) !important; */
+}
+.swiper-button-next{
+    bottom: 10% !important;
+    right: 38vw !important;
+    margin-top: 0 !important;
+}
 .swiper_txt{
     position: absolute;
     bottom: 20%;
@@ -527,7 +538,7 @@
         background-size: cover;
     }
     /*//section who*/
-    .swiper-button-prev{
+    /* .swiper-button-prev{
         width: 35px !important;
         height: 35px !important;
         background-image: url(img/prev_arrow.png) !important;
@@ -592,7 +603,7 @@
     }
     .subtxt{
         font-size: 14px;
-    }
+    } */
 
     .call_wrap{
         padding: 0 5vw;
