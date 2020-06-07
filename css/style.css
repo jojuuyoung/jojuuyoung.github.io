@@ -669,17 +669,6 @@
 
 }
 
-.swiper-slide .img img{
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: .8s;
-    transition-timing-function: cubic-bezier(.645,.045,.355,1);
-}
-
-.swiper-slide .img.active img {
-    opacity: 1
-}
-
 @media all and (max-width: 979px) {
     .who_wrap{
         background-size: 70% auto;
@@ -703,3 +692,14 @@
         background-size: cover;
     }
 }
+
+/* .swiper-slide .img img{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(.645,.045,.355,1);
+}
+
+.swiper-slide .img.active img {
+    opacity: 1
+} */
