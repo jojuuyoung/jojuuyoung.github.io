@@ -151,7 +151,7 @@
     height: 100vh;
 }
 .circle{
-    position: relative; /*.circle_txt 기준점*/
+    position: absolute; 
     width: 48vw;
     height: 48vw;/* height: 100vh; */
     background-image: url(img/circle.png), url(img/imog.png);
@@ -160,10 +160,10 @@
     background-position: center, center;
 }
 .circle_txt{
-    position: absolute;
+    position: relative;/*.circle_txt span기준점*/
     width: 48vw; 
     height: 48vw;/* height: 12em; */
-    animation-name: circle;
+    /* animation-name: circle; */
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;

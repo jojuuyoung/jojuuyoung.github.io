@@ -6,12 +6,12 @@
     <title>주영월드 !</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font.css">
-    <link rel="stylesheet" href="fullpage.css">
+    <link rel="stylesheet" href="fullpage.min.css">
     <link rel="stylesheet" href="swiper.min.css">
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- fullpage JS -->
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript" src="fullpage.min.js"></script>
     <!-- Swiper JS -->
     <script type="text/javascript" src="swiper.min.js"></script>
 </head>
@@ -146,7 +146,7 @@
         <!-- //swiper-container -->
         <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper('.swiper-container', {
+            var Swiper = new Swiper('.swiper-container', {
                 loop:true,
                 // direction: 'vertical',
                 pagination: {
@@ -176,9 +176,10 @@
     <script>
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-	        //sectionsColor: ['#01a75d', '#01a75d', '#01a75d', '#01a75d', '#01a75d'],//초록배경컬러
-            //sectionsColor: ['#edb171', '#edb171', '#edb171', '#edb171', '#edb171'],//상아색배경컬러
+            v2compatible: 'true',
             sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
+            //sectionsColor: ['#01a75d', '#01a75d', '#01a75d', '#01a75d', '#01a75d'],//초록배경컬러
+            //sectionsColor: ['#edb171', '#edb171', '#edb171', '#edb171', '#edb171'],//상아색배경컬러
             //sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
             //sectionsColor: ['#db9686', '#db9686', '#db9686', '#db9686', '#db9686'],//배경컬러
             navigation: true,//오른쪽 도트 네비게이션
