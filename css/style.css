@@ -71,7 +71,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(img/top.png);
+    background-image: url(/img/top.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     animation-name: topbtn;
@@ -154,7 +154,7 @@
     position: absolute; 
     width: 48vw;
     height: 48vw;/* height: 100vh; */
-    background-image: url(img/circle.png), url(img/imog.png);
+    background-image: url(/img/circle.png), url(/img/imog.png);
     background-size: 100%, 70%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -291,7 +291,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: url(img/object.png);
+    background-image: url(/img/object.png);
     background-repeat: no-repeat;
     background-size: 52% auto;
     background-position: center center;
@@ -302,7 +302,7 @@
     width: 3vw;
     height: 3vw;
     margin: 0 auto;
-    background-image: url(img/about.png);
+    background-image: url(/img/about.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -327,7 +327,7 @@
     vertical-align: middle;
     width: 90px;
     height: 20px;
-    background-image: url(img/unnamed02.png);
+    background-image: url(/img/unnamed02.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 1vw;
@@ -804,3 +804,10 @@
 .swiper-slide .img.active img {
     opacity: 1
 }
+/*네이게이션 백그라운드 컬러*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background-color: #fff;
+/*    background: url(../9211d87a-4db3-48c7-8881-db33bf245145.png);*/
+    background-size: 12px 12px;
+}
+/* //네이게이션 백그라운드 컬러*/

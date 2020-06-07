@@ -7,47 +7,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-family: 'NotoKr';
 	font-style: normal;
 	font-weight: 100;
-	src: url('font/notokr-light.eot');
-	src: url('font/notokr-light.eot?#iefix') format('embedded-opentype'),
-		url('font/notokr-light.woff2') format('woff2'),
-		url('font/notokr-light.woff') format('woff');
+	src: url('/font/notokr-light.eot');
+	src: url('/font/notokr-light.eot?#iefix') format('embedded-opentype'),
+		url('/font/notokr-light.woff2') format('woff2'),
+		url('/font/notokr-light.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'NotoKr';
 	font-style: normal;
 	font-weight: 300;
-	src: url('font/notokr-regular.eot');
-	src: url('font/notokr-regular.eot?#iefix') format('embedded-opentype'),
-		url('font/notokr-regular.woff2') format('woff2'),
-		url('font/notokr-regular.woff') format('woff');
+	src: url('/font/notokr-regular.eot');
+	src: url('/font/notokr-regular.eot?#iefix') format('embedded-opentype'),
+		url('/font/notokr-regular.woff2') format('woff2'),
+		url('/font/notokr-regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'NotoKr';
 	font-style: normal;
 	font-weight: 500;
-	src: url('font/notokr-medium.eot');
-	src: url('font/notokr-medium.eot?#iefix') format('embedded-opentype'),
-		url('font/notokr-medium.woff2') format('woff2'),
-		url('font/notokr-medium.woff') format('woff');
+	src: url('/font/notokr-medium.eot');
+	src: url('/font/notokr-medium.eot?#iefix') format('embedded-opentype'),
+		url('/font/notokr-medium.woff2') format('woff2'),
+		url('/font/notokr-medium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'NotoKr';
 	font-style: normal;
 	font-weight: 700;
-	src: url('font/notokr-bold.eot');
-	src: url('font/notokr-bold.eot?#iefix') format('embedded-opentype'),
-		url('font/notokr-bold.woff2') format('woff2'),
-		url('font/notokr-bold.woff') format('woff');
+	src: url('/font/notokr-bold.eot');
+	src: url('/font/notokr-bold.eot?#iefix') format('embedded-opentype'),
+		url('/font/notokr-bold.woff2') format('woff2'),
+		url('/font/notokr-bold.woff') format('woff');
 }
 @font-face {
 	font-family: 'Montserrat';
-	src: url('font/Montserrat-Regular.eot');
-	src: url('font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('font/Montserrat-Regular.woff') format('woff'),
-		 url('font/Montserrat-Regular.woff2') format('woff2');
+	src: url('/font/Montserrat-Regular.eot');
+	src: url('/font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('/font/Montserrat-Regular.woff') format('woff'),
+		 url('/font/Montserrat-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
@@ -81,14 +81,3 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 		unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
   } */
 
-
-
-
-
-/*네이게이션 백그라운드 컬러*/
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
-    background-color: #fff;
-/*    background: url(../9211d87a-4db3-48c7-8881-db33bf245145.png);*/
-    background-size: 12px 12px;
-}
-/* //네이게이션 백그라운드 컬러*/
