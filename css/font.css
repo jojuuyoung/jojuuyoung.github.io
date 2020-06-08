@@ -69,6 +69,30 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
   }
   
+	@font-face {
+		font-family: 'Eina03-Light';
+		src: url("../font/Eina03-Light.eot");
+		src: url("../font/Eina03-Light.eot") format("embedded-opentype");
+		src: url("../font/Eina03-Light.woff") format("woff");
+		src: url("../font/Eina03-Light.woff2") format("woff2");
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Eina03-Regular';
+		src: url("../font/Eina03-Regular.eot");
+		src: url("../font/Eina03-Regular.eot") format("embedded-opentype");
+		src: url("../font/Eina03-Regular.woff") format("woff");
+		src: url("../font/Eina03-Regular.woff2") format("woff2");
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Eina03-SemiBold';
+		src: url("../font/Eina03-SemiBold.eot");
+		src: url("../font/Eina03-SemiBold.eot") format("embedded-opentype");
+		src: url("../font/Eina03-SemiBold.woff") format("woff");
+		src: url("../font/Eina03-SemiBold.woff2") format("woff2");
+		font-style: normal;
+	}
   
   /* @font-face {
 	font-family: 'Rubik';
