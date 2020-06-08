@@ -439,8 +439,9 @@
     overflow: hidden;
     font-family: 'Montserratcall', sans-serif;
     font-weight: bold;
-    font-size: 8vw;
+    font-size: 7.93vw; /*8vw*/
     color: #fff;
+    background-color: silver;
 }
 .call_wrap p:first-child{
     font-size: 8.2vw;
