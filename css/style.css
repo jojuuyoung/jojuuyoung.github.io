@@ -34,9 +34,22 @@
 }
 /* //배경 그리드 */
 /*네이게이션 백그라운드 컬러*/
-#fp-nav ul li a span, 
-.fp-slidesNav ul li a span{
-    background-color: #fff !important;
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: rgb(250, 188, 19) !important;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 /* //네이게이션 백그라운드 컬러*/
 /* //layout common */
@@ -355,10 +368,10 @@
 
 /* section project */
 .swiper-container {
-    width: 100vw;
-    height: 100vh;
-    border: 45px solid #01a75d;
-    box-sizing: border-box;
+    width: 95vw;
+    height: 90vh;
+    background-color: #fff;
+    background-image: url(../img/noise.png);
 }
 .swiper-slide {
     text-align: center;
@@ -396,6 +409,7 @@
 .swiper_wrap{
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .swiper_wrap .img{
     overflow: hidden;
