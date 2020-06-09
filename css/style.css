@@ -80,28 +80,6 @@
     line-height: 1.4; */
 }
 /* //주영 월드 */
-.skill02{
-    
-    white-space: nowrap;
-    line-height: 1.2;
-    color: #e5e5e5;
-    font-size: 130px;
-    font-size: 6.77vw;
-    text-align: left;
-}
-@-webkit-keyframes marquee {
-	0% {-webkit-transform:translateX(0);}
-	100% {-webkit-transform:translateX(-50%);}
-}
- @keyframes marquee {
-	0% {transform:translateX(0);}
-	100% {transform:translateX(-50%);}
-}
-.skill02{-webkit-animation:marquee 30s linear infinite;animation:marquee 30s linear infinite;}
-
-
-
-
 
 /* top 버튼 */
 .top-btn{
@@ -315,10 +293,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/object.png);
+    /* background-image: url(../img/object.png);
     background-repeat: no-repeat;
     background-size: 52% auto;
-    background-position: center center;
+    background-position: center center; */
 }
 .about::before{
     content: '';
@@ -333,7 +311,8 @@
 .about{
     position: relative; /*mark01 기준점*/
     text-align: center;
-    font-size: 4vw;
+    font-size: 5vw;
+    /* font-size: 4vw; */
     font-weight: 700;
     line-height: 1.2;
     z-index: 11;
@@ -384,6 +363,25 @@
     text-align: center;
     background-color: white;
 }
+.skill02{
+    
+    white-space: nowrap;
+    line-height: 1.2;
+    color: #e5e5e5;
+    font-size: 130px;
+    font-size: 6.77vw;
+    text-align: left;
+}
+/* @-webkit-keyframes marquee {
+	0% {-webkit-transform:translateX(0);}
+	100% {-webkit-transform:translateX(-50%);}
+} */
+ /* @keyframes marquee {
+	0% {transform:translateX(0);}
+	100% {transform:translateX(-50%);}
+} */
+.skill02{-webkit-animation:marquee 30s linear infinite;animation:marquee 30s linear infinite;}
+
 /* .skill02{
     text-align: center;
     background-color: white;

@@ -92,7 +92,9 @@
                 </span> -->
             </div>
             <div class="skill02">
-                과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발
+                <span>과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발</span>
+                <span>과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발  과연 애니메이션이 될까????????? 제발 되라 제발</span>
+
             </div>
             <!-- <div class="skill02">
                 <span class="sk01">chrome</span>
@@ -210,6 +212,12 @@
             scrollingSpeed: 1000,//스크롤속도
             loopBottom: true//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
             });
+
+            $('.about').mousemove(function(e){
+     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+     $('.about').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(196, 227, 28, 0.5), '+rYP/8+'px '+rXP/60+'px rgba(196, 227, 28, 0.5), '+rXP/70+'px '+rYP/12+'px rgba(196, 227, 28, 0.5)');
+   });    
     </script>
     <!-- //fullpage script -->
 
