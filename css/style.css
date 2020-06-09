@@ -42,7 +42,7 @@
     height: 4px;
     width: 4px;
     border: 0;
-    background: rgb(250, 188, 19) !important;
+    background: #fff !important;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
@@ -495,12 +495,12 @@
     content: '';
     width: 0;
     height: 15px;
-    background-color: #eaa9a9;
+    background-color: #8dc4eb;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
 .swiper_txt:hover .tit::after{
-    width: 62%;
+    width: 67%;
     transition:width 0.5s; 
     -webkit-transition:width 0.5s; 
     -ms-transition:width 0.5s;
