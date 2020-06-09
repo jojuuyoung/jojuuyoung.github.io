@@ -80,6 +80,28 @@
     line-height: 1.4; */
 }
 /* //주영 월드 */
+.skill02{
+    
+    white-space: nowrap;
+    line-height: 1.2;
+    color: #e5e5e5;
+    font-size: 130px;
+    font-size: 6.77vw;
+    text-align: left;
+}
+@-webkit-keyframes marquee {
+	0% {-webkit-transform:translateX(0);}
+	100% {-webkit-transform:translateX(-50%);}
+}
+ @keyframes marquee {
+	0% {transform:translateX(0);}
+	100% {transform:translateX(-50%);}
+}
+.skill02{-webkit-animation:marquee 30s linear infinite;animation:marquee 30s linear infinite;}
+
+
+
+
 
 /* top 버튼 */
 .top-btn{
@@ -362,10 +384,10 @@
     text-align: center;
     background-color: white;
 }
-.skill02{
+/* .skill02{
     text-align: center;
     background-color: white;
-}
+} */
 /* //section skill */
 
 /* section project */
