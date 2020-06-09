@@ -293,10 +293,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../img/object.png);
+    background-image: url(../img/object.png);
     background-repeat: no-repeat;
     background-size: 52% auto;
-    background-position: center center; */
+    background-position: center center;
 }
 .about::before{
     content: '';
@@ -304,15 +304,22 @@
     width: 3vw;
     height: 3vw;
     margin: 0 auto;
-    background-image: url(../img/about.png);
+    background-image: url(../img/hand.png);
     background-repeat: no-repeat;
     background-size: contain;
+    animation: hand 1s linear infinite;
+    -webkit-animation: hand 1s linear infinite;
+    transform: rotate(25deg);
+}
+@keyframes hand{
+    0% {transform: rotate(-15deg);}
+    50% {transform: rotate(25deg);}
+    100%{transform: rotate(-15deg);}
 }
 .about{
     position: relative; /*mark01 기준점*/
     text-align: center;
-    font-size: 5vw;
-    /* font-size: 4vw; */
+    font-size: 4.5vw;
     font-weight: 700;
     line-height: 1.2;
     z-index: 11;
@@ -482,13 +489,13 @@
 }
 .tit::after{
     position: absolute;
-    z-index: 12;
-    bottom: 0;
+    z-index: 1;
+    bottom: 10px;
     display: inline-block;
     content: '';
     width: 0;
-    height: 1px;
-    background: #000;
+    height: 15px;
+    background-color: #eaa9a9;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
@@ -499,6 +506,8 @@
     -ms-transition:width 0.5s;
 }
 .swiper_txt .tit > .border{
+    position: relative; /*tit::after보다 위로 올릴려고 줌*/
+    z-index: 11;
     display: block;
     width: auto;
     color: #000;

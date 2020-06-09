@@ -202,8 +202,8 @@
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             v2compatible: 'true',
-            // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#fff', '#eaa9a9'],//베이비핑크배경컬러
-            sectionsColor: ['#01a75d', '#01a75d', '#01a75d', '#01a75d', '#01a75d'],//초록배경컬러
+            sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
+            // sectionsColor: ['#423351', '#372846', '#372846', '#372846', '#372846'],//초록배경컬러
             //sectionsColor: ['#edb171', '#edb171', '#edb171', '#edb171', '#edb171'],//상아색배경컬러
             //sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
             // sectionsColor: ['#fa5f71', '#fa5f71', '#fa5f71', '#fa5f71', '#fa5f71'],//찐핑크배경컬러
@@ -213,11 +213,12 @@
             loopBottom: true//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
             });
 
-            $('.about').mousemove(function(e){
-     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
-     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
-     $('.about').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(196, 227, 28, 0.5), '+rYP/8+'px '+rXP/60+'px rgba(196, 227, 28, 0.5), '+rXP/70+'px '+rYP/12+'px rgba(196, 227, 28, 0.5)');
-   });    
+            //마우스 오버하면 텍스트섀도우 js
+            // $('.about').mousemove(function(e){
+            //     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
+            //     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
+            // $('.about').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(196, 227, 28, 0.5), '+rYP/8+'px '+rXP/60+'px rgba(196, 227, 28, 0.5), '+rXP/70+'px '+rYP/12+'px rgba(196, 227, 28, 0.5)');
+            // });    
     </script>
     <!-- //fullpage script -->
 
