@@ -369,18 +369,113 @@
     width: 60vw;
     margin: 0 auto;
 }
-.skillbox{
+.skill01 ul{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.skillbox li {
-    overflow: hidden;
+.skill01 ul li{
+    list-style: none;
     width: 21%;
 }
-.skillbox li .skill {
+.skill01 ul li:first-child{
+    animation: move1 6s both linear infinite;
+    /* background-image: url(../img/top.png);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-color: transparent !important; */
+}
+@keyframes move1{
+    0%{
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: rotate(-20deg) translateY(-30px) translateX(30px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+}
+.skill01 ul li:nth-child(2),
+.skill01 ul li:nth-child(4){
+    animation: move2 8s both linear infinite;
+}
+@keyframes move2{
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(30px) translateX(50px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.skill01 ul li:nth-child(3){
+    animation: move3 8s both linear infinite;
+}
+@keyframes move3{
+    0%{
+        transform: rotate(0deg) translateY(-10px) translateX(-10px);
+    }
+    50%{
+        transform: rotate(30deg) translateY(80px) translateX(50px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(-10px) translateX(-10px);
+    }
+}
+.skill01 ul li:nth-child(5){
+    animation :move4 8s both linear infinite;
+}
+@keyframes move4{
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    25%{
+        transform: translateY(18px) translateX(12px);
+    }
+    50%{
+        transform: translateY(35px) translateX(2px);
+    }
+    75%{
+        transform: translateY(10px) translateX(-8px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.skill01 ul li:nth-child(6){
+    animation: move5 3s both linear infinite;
+}
+@keyframes move5{
+    0%{
+        transform: rotate(0deg) translateY(-5px) translateX(0px);
+    }
+    50%{
+        transform: rotate(8deg) translateY(10px) translateX(0px);
+    }
+    100%{
+        transform: rotate(0deg) translateY(-5px) translateX(0px);
+    }
+}
+.skill01 ul li:last-child{
+    animation: move6 6s both linear infinite;
+}
+@keyframes move6{
+    0%{
+        transform: translateY(0px) translateX(0px);
+    }
+    50%{
+        transform: translateY(-15px) translateX(-20px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+.skill01 ul li a{
     display:block;
-    background-color: #fff;
+    border: 1px solid #000;
     border-radius:24px;
     box-sizing: border-box;
     text-align: center;
@@ -389,11 +484,26 @@
     transition: 0.2s ease-out;
     font-weight: 700;
     padding: 135px 20px 0;
-    height:202px;
+    width: 100%;
+    border-radius: 50%;
+    height: 240px;
 }
-.skillbox li .skill:hover {padding:80px 20px 0; box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);}
-.skillbox li .skill .hover {display:none; position:relative;  word-break:keep-all}
-.skillbox li .skill:hover .hover {display:block; font-size:14px; font-weight:400; margin-top:15px;}
+.skill01 ul li a:hover{
+    padding:80px 20px 0; 
+}
+.skill01 ul li a span{
+    display:none;
+    position:relative;
+    z-index:11;
+    word-break:keep-all;
+}
+.skill01 ul li a:hover span{
+    display:block; 
+    font-size:14px; 
+    font-weight:400; 
+    margin-top:15px;
+    background-color: darksalmon;
+}
 
 #business ul li:nth-child(1) a {background: url(../images/main/ico_creative.png) center 40px no-repeat;}
 .pc #business ul li:nth-child(1) a:hover {background: url(../images/main/ico_creative_on.png) center 24px no-repeat; background-size:40px;}
