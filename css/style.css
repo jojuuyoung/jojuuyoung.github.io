@@ -365,21 +365,36 @@
     0% {transform: translateX(-50%) translateY(-1px); opacity: 0.7;}
 	100% {transform: translateX(-49%) translateY(0); opacity: 1;}
 }
-.skill01 .text01{
-    display: inline-block;
-    text-align: left;
-    background-color: white;
-    font-size: 3vw;
+.skill01{
+    width: 60vw;
+    margin: 0 auto;
 }
-#business {background: #fff; height:100%;}
-#business h3 {font-family: 'Montserrat', sans-serif; font-size:60px; font-weight:300; letter-spacing:-2px; text-align: center;}
-#business ul {text-align: center;}
-#business ul li {display:inline-block;width: 22.375%;margin: 0 3% 3% 0;}
-#business ul li:nth-child(4n) {margin: 0 0 3% 0;}
-#business ul li a {display:block;padding: 135px 20px 0;height:202px;border:1px solid #000;border-radius:24px;transition: 0.2s ease-out;text-align: center;font-size:22px;font-weight:700;overflow:hidden;}
-.pc #business ul li a:hover {padding:80px 20px 0; box-shadow: 0 0 40px rgba(0, 0, 0, 0.2); border:1px solid #fff;}
-#business ul li a span {display:none; position:relative;  word-break:keep-all}
-.pc #business ul li a:hover span {display:block; font-size:14px; font-weight:400; margin-top:15px;}
+.skillbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skillbox li {
+    overflow: hidden;
+    width: 21%;
+}
+.skillbox li .skill {
+    display:block;
+    background-color: #fff;
+    border-radius:24px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    overflow:hidden;
+    transition: 0.2s ease-out;
+    font-weight: 700;
+    padding: 135px 20px 0;
+    height:202px;
+}
+.skillbox li .skill:hover {padding:80px 20px 0; box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);}
+.skillbox li .skill .hover {display:none; position:relative;  word-break:keep-all}
+.skillbox li .skill:hover .hover {display:block; font-size:14px; font-weight:400; margin-top:15px;}
+
 #business ul li:nth-child(1) a {background: url(../images/main/ico_creative.png) center 40px no-repeat;}
 .pc #business ul li:nth-child(1) a:hover {background: url(../images/main/ico_creative_on.png) center 24px no-repeat; background-size:40px;}
 #business ul li:nth-child(2) a {background: url(../images/main/ico_btl.png) center 40px no-repeat;}
@@ -394,75 +409,6 @@
 .pc #business ul li:nth-child(6) a:hover {background: url(../images/main/ico_020_on.png) center 24px no-repeat; background-size:40px;}
 #business ul li:nth-child(7) a {background: url(../images/main/ico_ooh.png) center 40px no-repeat;}
 .pc #business ul li:nth-child(7) a:hover {background: url(../images/main/ico_ooh_on.png) center 24px no-repeat; background-size:40px;}
-
-.marquee {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    position: relative
-}
-
-@-webkit-keyframes marquee {
-    0% {
-        -webkit-transform: translate(0)
-    }
-
-    99%,to {
-        -webkit-transform: translate(-100%)
-    }
-}
-
-@keyframes marquee {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-
-    99%,to {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%)
-    }
-}
-
-.marquee.infinite {
-    border: 1px solid #000
-}
-
-.marquee p {
-    margin: 0;
-    padding-left: 100%;
-    display: inline-block;
-    white-space: nowrap;
-    -webkit-animation-name: marquee;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-name: marquee;
-    -moz-animation-timing-function: linear;
-    -moz-animation-duration: 10s;
-    -moz-animation-iteration-count: infinite;
-    -ms-animation-name: marquee;
-    -ms-animation-timing-function: linear;
-    -ms-animation-duration: 10s;
-    -ms-animation-iteration-count: infinite;
-    -o-animation-name: marquee;
-    -o-animation-timing-function: linear;
-    -o-animation-duration: 10s;
-    -o-animation-iteration-count: infinite;
-    animation-name: marquee;
-    animation-timing-function: linear;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
-}
-
-.marquee p:after {
-    content: "";
-    white-space: nowrap
-}
 /* //section skill */
 
 /* section project */
