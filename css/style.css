@@ -9,6 +9,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-image: url(../img/noise.png);
 }
 /* 배경 그리드 */
 .section::before{
@@ -318,7 +319,7 @@
 .about{
     position: relative; /*mark01 기준점*/
     text-align: center;
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 700;
     line-height: 1.2;
     z-index: 11;
