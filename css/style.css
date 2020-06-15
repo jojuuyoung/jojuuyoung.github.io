@@ -747,6 +747,9 @@
 
 @media all and (max-width:480px) { 
 /*가로값이 480px이하 일 때 스타일 적용*/
+#fp-nav.fp-right{
+    display: none;
+}
 .titleBar{
     top: 28vw;
 }
