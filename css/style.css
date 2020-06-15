@@ -65,10 +65,11 @@
     content: '';
     display: inline-block;
     width: 7px;
-    height: 45px;
+    height: 40px;
     background-color: #000;
 }
 .titleBar a{
+    font-family: 'Montserratcall', sans-serif;
     display: inline-block;
     vertical-align: top;
     color: #000;
@@ -622,7 +623,7 @@
     content: '';
     width: 0;
     height: 15px;
-    background-color: #8dc4eb;
+    background-color: pink;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
