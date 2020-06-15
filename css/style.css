@@ -319,6 +319,7 @@
     100%{transform: rotate(-15deg);}
 }
 .about{
+    /* display: none; */
     position: relative; /*mark01 기준점*/
     text-align: center;
     font-size: 4.5vw;
@@ -632,6 +633,9 @@
     transition:width 0.5s; 
     -webkit-transition:width 0.5s; 
     -ms-transition:width 0.5s;
+}
+.swiper_txt02:hover .tit::after{
+    width: 80%;
 }
 .swiper_txt .tit > .border{
     position: relative; /*tit::after보다 위로 올릴려고 줌*/

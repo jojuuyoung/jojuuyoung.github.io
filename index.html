@@ -162,6 +162,21 @@
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
                             <div class="img">
+                                <a alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex033.jpg" alt="현대엘리베이터 이미지"></a>
+                            </div> 
+                            <div class="swiper_txt swiper_txt02">
+                                <span class="ptype">project website #02</span>
+                                <span class="subtit">현대 엘리베이터<br>관리자 웹사이트 구축</span>
+                                <span class="tit">
+                                    <a alt="한샘이펙스 바로가기" target="blank" class="border">현대엘리베이터 .</a>
+                                </span>
+                                <span class="subtxt">responsive web & HTML5 & CSS3 & JS</span>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper_wrap">
+                            <div class="img">
                                 <a href="http://jojuuyoung.dothome.co.kr/" alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex022.jpg" alt="한샘이펙스 이미지"></a>
                             </div> 
                             <div class="swiper_txt">
@@ -219,7 +234,6 @@
     <script>
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            v2compatible: 'true',
             // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
             // sectionsColor: ['#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f'],//겨자색배경컬러
             // sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
@@ -227,8 +241,24 @@
             navigation: true,//오른쪽 도트 네비게이션
             navigationTooltips: ['main','who','skill','site','contact'],//네비게이션 후버 텍스트
             scrollingSpeed: 1000,//스크롤속도
-            loopBottom: true//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
-            });
+            loopBottom: true,//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
+            
+            // onLeave: function(origin, destination, direction){
+            //     if(origin.index == 0){
+            //         $('.who .about').hide();
+            //     }
+            //     if(origin.index == 2){
+            //         $('.who .about').hide();
+            //     }
+            // },//스크롤이 시작할 때 실행, origin 원래있던섹션 destination 이동하는섹션 direction 스크롤방향
+            // afterLoad: function(origin, destination, direction){
+            //     if(destination.index == 1){
+            //         //index가 1번 일 경우
+            //         $('.who .about').show();
+            //     }
+            // }//스크롤이 끝날 때 실행
+
+        });
 
             //마우스 오버하면 텍스트섀도우 js
             // $('.about').mousemove(function(e){
