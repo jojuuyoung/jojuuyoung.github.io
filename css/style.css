@@ -141,7 +141,7 @@
 }
 .main p{
     position: absolute;
-    font-size: 1vw;
+    font-size: 18px;
     line-height: 1.3;
     z-index: 11;
 }
@@ -740,50 +740,197 @@
 
 
 /* 미디어쿼리 */
-@media all and (max-width:769px) { 
-/*가로값이 769px이하 일 때 스타일 적용*/
+@media all and (max-width:1023px) and (min-width:768px){ 
+/*가로값이 1023px이하 일 때 스타일 적용! 1024px이상은 적용 안됨*/
+    .titleBar{
+        top: 12vw;
+    }
+    /* section main */
+    .main p{
+        font-size: 16px;
+    }    
+    .circle{
+        width: 53vw;
+        height: 53vw;
+        background-size: 100%, 71%;
+    }
+    .circle_txt{
+        width: 53vw;
+        height: 53vw;
+        font-size: 4.45vw;
+    }
+    /* section who */
+    .who_wrap{
+        background-size: 60% auto;
+    }
+    .about{
+        font-size: 5vw;
+    }
+    .about::before{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    /* section site */
+    .swiper_wrap .img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .swiper_txt{
+        padding-left: 5vw;
+    }
+    .swiper_txt .subtit{
+        font-size: 48px;
+    }
+    .swiper_txt .tit{
+        font-size: 48px;
+    }
+    /* section call */
+    .call_wrap{
+        padding: 0 5vw;
+    }
+    .call_wrap p:first-child{
+        font-size: 9.74vw;
+    }
+    .call_wrap p{
+        font-size: 9.4vw;
+    }
 
 }
 
-@media all and (max-width:480px) { 
-/*가로값이 480px이하 일 때 스타일 적용*/
-#fp-nav.fp-right{
-    display: none;
+@media all and (max-width:767px) and (min-width:480px){ 
+/*가로값이 767px이하 일 때 스타일 적용! 768px이상은 적용 안됨*/
+    .titleBar{
+        top: 18vw;
+    }
+    /* section main */
+    .tag02{
+        bottom: 10vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .circle{
+        width: 60vw;
+        height: 60vw;
+        background-size: 100%, 73%;
+    }
+    .circle_txt{
+        width: 60vw;
+        height: 60vw;
+        font-size: 5vw;
+    }
+    /* section who */
+    .type{
+        top: 2vw;
+        font-size: 24px;
+    }
+    .who_wrap{
+        background-size: 75% auto;
+    }
+    .about{
+        font-size: 6vw;
+    }
+    .about::before {
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+    .mark01{
+        font-size: 15px;
+    }
+    .mark01::before{
+        width: 60px;
+        height: 15px;
+    }
+    /* section site */
+    .swiper-container{
+        width: 90vw;
+        height: 88vh;
+    }
+    .swiper_wrap{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_wrap .img{
+        width: 100%;
+        height: 50%;
+    }
+    .swiper_wrap .img img{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_txt{
+        width: 100%;
+        height: 50%;
+        padding: 12vw 8vw;
+    }
+    .swiper_txt .subtit {
+        font-size: 36px;
+    }
+    .swiper_txt:hover .tit::after{
+        width: 53%;
+    }
+    .swiper_txt02:hover .tit::after{
+        width: 70%;
+    }
+    .swiper_txt .tit {
+        font-size: 36px;
+    }
+    .swiper_txt .subtxt{
+        font-size: 16px;
+    }
+    /* section call */
+    .call_wrap {
+        padding: 0 5vw;
+    }
+    .call_wrap p:first-child {
+        font-size: 9.74vw;
+    }
+    .call_wrap p {
+        font-size: 9.4vw;
+    }
+    .bytag{
+        font-size: 16px;
+    }
+
 }
+
+@media all and (max-width:479px){
+/*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
 .titleBar{
-    top: 28vw;
+    top: 25vw;
 }
 .titleBar a{
+    line-height: 1.2;
     font-size: 14px;
-    padding-left: 7vw;
+}
+.titleBar::before{
+    height: 34px;
 }
 .main p{
-    font-size: 4vw
+    font-size: 16px;
 }
 .year{
-    font-size: 3vw !important;
-}
-.year::before{
-    width: 4px;
-    height: 4px;
+    font-size: 14px;
+    display: none;
 }
 .tag01{
+    right: 7vw;
     top: 18vh;
 }
 .tag02{
-    bottom: 20vh;
-    left: 50vw;
+    bottom: 18vh;
+    left: 50%;
     transform: translateX(-50%);
 }
 .circle{
-    width: 60vw;
-    height: 60vw;
+    width: 65vw;
+    height: 65vw;
     background-size: 100%, 75%;
 }
 .circle_txt{
-    width: 60vw;
-    height: 60vw;
-    font-size: 5.1vw;
+    width: 65vw;
+    height: 65vw;
+    font-size: 5.4vw;
 }
 
 .type{
@@ -791,32 +938,24 @@
     font-size: 22px;
 }
 .who_wrap{
-    background-size: 75% auto;
+    background-size: 90% auto;
 }
 .about{
-    font-size: 5.5vw;
+    font-size: 6.2vw;
 }
 .about::before{
-    width: 7vw;
-    height: 7vw;
+    width: 7.5vw;
+    height: 7.5vw;
 }
 .mark01{
+    bottom: -30%;
     font-size: 14px;
-    bottom: -25%;
 }
 .mark01::before{
-    width: 60px;
-    height: 13px;
-    margin-right: 2vw;
+    width: 50px;
+    height: 14px;
 }
 
-/*스킬부분*/
-.swiper-button-prev{
-    
-}
-.swiper-button-next{
-    
-}
 .swiper-container{
     width: 90vw;
     height: 88vh;
@@ -837,47 +976,35 @@
 .swiper_txt{
     width: 100%;
     height: 50%;
-    overflow: hidden;
-    padding: 10vw 5vw 5vw;
-    box-sizing: border-box;
+    padding: 10vw 5vw;
 }
 .swiper_txt .ptype{
-    font-size: 15px;
+    font-size: 14px;
 }
 .swiper_txt .subtit{
     font-size: 30px;
 }
 .swiper_txt .tit{
-    font-size: 35px;
+    font-size: 30px;
 }
 .swiper_txt .subtxt{
     font-size: 14px;
 }
-.swiper_txt:hover .tit::after{
-    width: 50%;
-}
-.swiper_txt02:hover .tit::after{
-    width: 65%;
-}
 
 .call_wrap{
-    padding: 0 5vw;
-}
-.call_wrap p:first-child{
-    font-size: 9.65vw;
-}
-.call_wrap p{
-    font-size: 9.35vw;
+    padding: 0 3vw;
 }
 .call_wrap .hover{
-    -webkit-text-stroke-width: 1.5px
+    -webkit-text-stroke-width: 1px;
+}
+.call_wrap p:first-child{
+    font-size: 10.15vw;
+}
+.call_wrap p{
+    font-size: 9.8vw;
 }
 .bytag{
     font-size: 14px;
-}
-.top-btn{
-    width: 55px;
-    height: 55px;
 }
 
 

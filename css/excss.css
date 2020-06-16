@@ -405,3 +405,143 @@
 }
 
 
+@media all and (max-width:480px) { 
+    /*가로값이 480px이하 일 때 스타일 적용*/
+    #fp-nav.fp-right{
+        display: none;
+    }
+    .titleBar{
+        top: 28vw;
+    }
+    .titleBar a{
+        font-size: 14px;
+        padding-left: 7vw;
+    }
+    .main p{
+        font-size: 4vw
+    }
+    .year{
+        font-size: 3vw !important;
+    }
+    .year::before{
+        width: 4px;
+        height: 4px;
+    }
+    .tag01{
+        top: 18vh;
+    }
+    .tag02{
+        bottom: 20vh;
+        left: 50vw;
+        transform: translateX(-50%);
+    }
+    .circle{
+        width: 60vw;
+        height: 60vw;
+        background-size: 100%, 75%;
+    }
+    .circle_txt{
+        width: 60vw;
+        height: 60vw;
+        font-size: 5.1vw;
+    }
+    
+    .type{
+        top: 3vw;
+        font-size: 22px;
+    }
+    .who_wrap{
+        background-size: 75% auto;
+    }
+    .about{
+        font-size: 5.5vw;
+    }
+    .about::before{
+        width: 7vw;
+        height: 7vw;
+    }
+    .mark01{
+        font-size: 14px;
+        bottom: -25%;
+    }
+    .mark01::before{
+        width: 60px;
+        height: 13px;
+        margin-right: 2vw;
+    }
+    
+    /*스킬부분*/
+    .swiper-button-prev{
+        
+    }
+    .swiper-button-next{
+        
+    }
+    .swiper-container{
+        width: 90vw;
+        height: 88vh;
+    }
+    .swiper_wrap{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_wrap .img{
+        width: 100%;
+        height: 50%;
+    }
+    .swiper_wrap .img img{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_txt{
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        padding: 10vw 5vw 5vw;
+        box-sizing: border-box;
+    }
+    .swiper_txt .ptype{
+        font-size: 15px;
+    }
+    .swiper_txt .subtit{
+        font-size: 30px;
+    }
+    .swiper_txt .tit{
+        font-size: 35px;
+    }
+    .swiper_txt .subtxt{
+        font-size: 14px;
+    }
+    .swiper_txt:hover .tit::after{
+        width: 50%;
+    }
+    .swiper_txt02:hover .tit::after{
+        width: 65%;
+    }
+    
+    .call_wrap{
+        padding: 0 5vw;
+    }
+    .call_wrap p:first-child{
+        font-size: 9.65vw;
+    }
+    .call_wrap p{
+        font-size: 9.35vw;
+    }
+    .call_wrap .hover{
+        -webkit-text-stroke-width: 1.5px
+    }
+    .bytag{
+        font-size: 14px;
+    }
+    .top-btn{
+        width: 55px;
+        height: 55px;
+    }
+    
+    
+    
+    
+    
+    }
