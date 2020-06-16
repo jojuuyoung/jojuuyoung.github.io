@@ -1,4 +1,7 @@
 @charset "UTF-8";
+#fp-nav{
+    display: none;
+}
 /* layout common */
 .hide{
     display: none !important;
