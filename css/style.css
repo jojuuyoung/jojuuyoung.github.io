@@ -93,7 +93,7 @@
     height: 60px;
     right: 4vw;
     bottom: 4vw;
-    z-index: 11;
+    z-index: 99;
 }
 .top-btn a{
     position: relative;/*.top-btn span 기준점*/
@@ -711,7 +711,7 @@
     animation: heartbeat 2s infinite;
     -webkit-animation: heartbeat 2s infinite;
 }
-/*❣️❤️🧡💛💚💜💙🖤💖 🧡💛💚💙💜🖤🤍🤎*/
+/*❣️❤️🧡💛💚💜💙🖤💖 🧡💛💚💙💜🖤🤍🤎✌🏻*/
 .bytag{
     position: absolute;
     bottom: 5%;

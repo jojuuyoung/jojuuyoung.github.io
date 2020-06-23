@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" conetent="width-device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="juyoung world !">
+    <link rel="apple-touch-icon-precomposed" href="img/ios.png">
     <title>juyoung world ☺</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
@@ -30,15 +34,15 @@
 
     <!-- top btn -->
     <div class="top-btn">
-        <a href="index.html"></a>
-        <span>✌🏻</span>
+        <a href="#" id="top-btn"></a>
+        <span>👆</span>
     </div>
     <!-- //top btn -->
 
     <!-- fullpage -->
     <div id="fullpage">
         <!-- 메인 -->
-        <section class="section main">
+        <section class="section main" id="main">
             <p class="year">2020</p>
             <p class="tag01">I hope to meet you soon<br><i>@publisher</i></p>
             <p class="tag02">welcome to<br>ju young<br>world !</p>
@@ -233,6 +237,10 @@
     <!-- //fullpage -->
     <!-- fullpage script -->
     <script>
+       
+        
+        
+        
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
@@ -266,7 +274,15 @@
             //     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
             //     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
             // $('.about').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(196, 227, 28, 0.5), '+rYP/8+'px '+rXP/60+'px rgba(196, 227, 28, 0.5), '+rXP/70+'px '+rYP/12+'px rgba(196, 227, 28, 0.5)');
-            // });    
+            // }); 
+            
+            $(function() {
+            $("#top-btn").on("click", function() {
+                $("html, body").animate({scrollTop:0}, '500');
+                return false;
+            });
+        });
+
     </script>
     <!-- //fullpage script -->
 
