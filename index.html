@@ -25,24 +25,16 @@
     <!-- <link rel="stylesheet" href="css/excss.css"> -->
 </head>
 <body>
-
     <!-- title bar -->
     <div class="titleBar">
         <a href="index.html">Ju Young<br>World</a>
     </div>
     <!-- //title bar -->
 
-    <!-- top btn -->
-    <div class="top-btn">
-        <a href="#" id="top-btn"></a>
-        <span>👆</span>
-    </div>
-    <!-- //top btn -->
-
     <!-- fullpage -->
     <div id="fullpage">
         <!-- 메인 -->
-        <section class="section main" id="main">
+        <section class="section" id="main">
             <p class="year">2020</p>
             <p class="tag01">I hope to meet you soon<br><i>@publisher</i></p>
             <p class="tag02">welcome to<br>ju young<br>world !</p>
@@ -69,7 +61,7 @@
         <!-- //메인 -->
 
         <!-- 소개 -->
-        <section class="section who">
+        <section class="section" id="who">
             <h2 class="type">about me</h2>
             <div class="who_wrap">
                 <p class="about">
@@ -235,18 +227,28 @@
         <!-- //연락처 -->
     </div>
     <!-- //fullpage -->
+
+    <button type="button" id="top_btn">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <span class="sound_only">상단으로</span>
+    </button>
+    
     <!-- fullpage script -->
     <script>
-       
-        
-        
+       $(function(){
+            $("#top_btn").on("click", function() {
+                $("html, body").animate({scrollTop:0}, '500');
+                return false;
+            });
+        });
         
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
             // sectionsColor: ['#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f'],//겨자색배경컬러
             // sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
-            sectionsColor: ['#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba'],//찐핑크배경컬러
+            // sectionsColor: ['#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba'],//찐핑크배경컬러
+            sectionsColor: ['#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9'],//민트배경컬러
             navigation: true,//오른쪽 도트 네비게이션
             navigationTooltips: ['main','who','skill','site','contact'],//네비게이션 후버 텍스트
             scrollingSpeed: 1000,//스크롤속도
@@ -275,14 +277,6 @@
             //     var rYP = (e.pageY - this.offsetTop-$(this).height()/2);
             // $('.about').css('text-shadow', +rYP/10+'px '+rXP/80+'px rgba(196, 227, 28, 0.5), '+rYP/8+'px '+rXP/60+'px rgba(196, 227, 28, 0.5), '+rXP/70+'px '+rYP/12+'px rgba(196, 227, 28, 0.5)');
             // }); 
-            
-            $(function() {
-            $("#top-btn").on("click", function() {
-                $("html, body").animate({scrollTop:0}, '500');
-                return false;
-            });
-        });
-
     </script>
     <!-- //fullpage script -->
 
