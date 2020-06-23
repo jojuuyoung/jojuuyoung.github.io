@@ -31,6 +31,12 @@
     </div>
     <!-- //title bar -->
 
+    <!-- top btn -->
+    <a id="top-btn">
+        <span>👆🏻</span>
+    </a>
+    <!-- //top btn -->
+
     <!-- fullpage -->
     <div id="fullpage">
         <!-- 메인 -->
@@ -76,7 +82,7 @@
         <!-- //소개 -->
 
         <!-- 스킬 소개 -->
-        <section class="section skill">
+        <section class="section" id="skill">
             <h2 class="type">skill</h2>
             <!-- <div class="skill01">
                 <h2>my skill is</h2>
@@ -135,7 +141,7 @@
         <!-- //스킬 소개 -->
 
         <!-- 프로젝트 -->
-        <section class="section project">
+        <section class="section" id="project">
             <h2 class="type">project is</h2>
             <!-- swiper-container -->
             <div class="swiper-container">
@@ -216,7 +222,7 @@
         <!-- //프로젝트 -->
 
         <!-- 연락처 -->
-        <section class="section call">
+        <section class="section" id="call">
             <h2 class="type">watching for<br>thank you ☺</h2>
             <div class="call_wrap">
                 <p>SENDME<a href="" class="hover">&nbsp;@EMAIL</a></p>
@@ -228,18 +234,6 @@
     </div>
     <!-- //fullpage -->
 
-    <button type="button" id="top_btn">
-        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        <span class="sound_only">상단으로</span>
-    </button>
-    <script>
-    $(function() {
-        $("#top_btn").on("click", function() {
-            $("html, body").animate({scrollTop:0}, '500');
-            return false;
-        });
-    });
-    </script>
     <!-- fullpage script -->
     <script>
         new fullpage('#fullpage', {
@@ -279,6 +273,5 @@
             // }); 
     </script>
     <!-- //fullpage script -->
-
 </body>
 </html>
