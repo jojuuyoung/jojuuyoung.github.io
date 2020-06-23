@@ -232,16 +232,16 @@
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
         <span class="sound_only">상단으로</span>
     </button>
-    
+    <script>
+    $(function() {
+        $("#top_btn").on("click", function() {
+            $("html, body").animate({scrollTop:0}, '500');
+            return false;
+        });
+    });
+    </script>
     <!-- fullpage script -->
     <script>
-       $(function(){
-            $("#top_btn").on("click", function() {
-                $("html, body").animate({scrollTop:0}, '500');
-                return false;
-            });
-        });
-        
         new fullpage('#fullpage', {
             licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
             // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
