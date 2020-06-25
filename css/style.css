@@ -732,7 +732,7 @@
         top: 12vw;
     }
     /* section main */
-    .main p{
+    #main p{
         font-size: 16px;
     }    
     .circle{
@@ -899,7 +899,7 @@
 .titleBar::before{
     height: 34px;
 }
-.main p{
+#main p{
     font-size: 16px;
 }
 .year{
