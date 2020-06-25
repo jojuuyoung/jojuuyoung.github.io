@@ -545,3 +545,178 @@
     
     
     }
+
+    .skill01 h2{
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        font-family: 'Eina03-SemiBold';
+        font-size: 5vw;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #fff;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #fff;
+        /* animation: skill01 1s alternate-reverse infinite; */
+    }
+    @keyframes skill01{
+        0% {transform: translateX(-50%) translateY(-1px); opacity: 0.7;}
+        100% {transform: translateX(-49%) translateY(0); opacity: 1;}
+    }
+    .skill01{
+        width: 60vw;
+        margin: 0 auto;
+    }
+    .skill01 ul{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .skill01 ul li{
+        list-style: none;
+        width: 21%;
+    }
+    .skill01 ul li:first-child{
+        animation: move1 6s both linear infinite;
+        /* background-image: url(../img/top.png);
+        background-size: 100% 100%;
+        background-repeat:no-repeat;
+        background-color: transparent !important; */
+    }
+    @keyframes move1{
+        0%{
+            transform: rotate(0deg) translateY(0px) translateX(0px);
+        }
+        50%{
+            transform: rotate(-20deg) translateY(-30px) translateX(30px);
+        }
+        100%{
+            transform: rotate(0deg) translateY(0px) translateX(0px);
+        }
+    }
+    .skill01 ul li:nth-child(2),
+    .skill01 ul li:nth-child(4){
+        animation: move2 8s both linear infinite;
+    }
+    @keyframes move2{
+        0%{
+            transform: translateY(0px) translateX(0px);
+        }
+        50%{
+            transform: translateY(30px) translateX(50px);
+        }
+        100%{
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+    .skill01 ul li:nth-child(3){
+        animation: move3 8s both linear infinite;
+    }
+    @keyframes move3{
+        0%{
+            transform: rotate(0deg) translateY(-10px) translateX(-10px);
+        }
+        50%{
+            transform: rotate(30deg) translateY(80px) translateX(50px);
+        }
+        100%{
+            transform: rotate(0deg) translateY(-10px) translateX(-10px);
+        }
+    }
+    .skill01 ul li:nth-child(5){
+        animation :move4 8s both linear infinite;
+    }
+    @keyframes move4{
+        0%{
+            transform: translateY(0px) translateX(0px);
+        }
+        25%{
+            transform: translateY(18px) translateX(12px);
+        }
+        50%{
+            transform: translateY(35px) translateX(2px);
+        }
+        75%{
+            transform: translateY(10px) translateX(-8px);
+        }
+        100%{
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+    .skill01 ul li:nth-child(6){
+        animation: move5 3s both linear infinite;
+    }
+    @keyframes move5{
+        0%{
+            transform: rotate(0deg) translateY(-5px) translateX(0px);
+        }
+        50%{
+            transform: rotate(8deg) translateY(10px) translateX(0px);
+        }
+        100%{
+            transform: rotate(0deg) translateY(-5px) translateX(0px);
+        }
+    }
+    .skill01 ul li:last-child{
+        animation: move6 6s both linear infinite;
+    }
+    @keyframes move6{
+        0%{
+            transform: translateY(0px) translateX(0px);
+        }
+        50%{
+            transform: translateY(-15px) translateX(-20px);
+        }
+        100%{
+            transform: translateY(0px) translateX(0px);
+        }
+    }
+    .skill01 ul li a{
+        display:block;
+        border: 1px solid #000;
+        border-radius:24px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        overflow:hidden;
+        transition: 0.2s ease-out;
+        font-weight: 700;
+        padding: 135px 20px 0;
+        width: 100%;
+        border-radius: 50%;
+        height: 240px;
+    }
+    .skill01 ul li a:hover{
+        padding:80px 20px 0; 
+    }
+    .skill01 ul li a span{
+        display:none;
+        position:relative;
+        z-index:11;
+        word-break:keep-all;
+    }
+    .skill01 ul li a:hover span{
+        display:block; 
+        font-size:14px; 
+        font-weight:400; 
+        margin-top:15px;
+        background-color: darksalmon;
+    }
+    
+    #business ul li:nth-child(1) a {background: url(../images/main/ico_creative.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(1) a:hover {background: url(../images/main/ico_creative_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(2) a {background: url(../images/main/ico_btl.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(2) a:hover {background: url(../images/main/ico_btl_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(3) a {background: url(../images/main/ico_media.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(3) a:hover {background: url(../images/main/ico_media_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(4) a {background: url(../images/main/ico_bigdata.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(4) a:hover {background: url(../images/main/ico_bigdata_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(5) a {background: url(../images/main/ico_sports.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(5) a:hover {background: url(../images/main/ico_sports_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(6) a {background: url(../images/main/ico_020.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(6) a:hover {background: url(../images/main/ico_020_on.png) center 24px no-repeat; background-size:40px;}
+    #business ul li:nth-child(7) a {background: url(../images/main/ico_ooh.png) center 40px no-repeat;}
+    .pc #business ul li:nth-child(7) a:hover {background: url(../images/main/ico_ooh_on.png) center 24px no-repeat; background-size:40px;}
+    

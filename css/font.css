@@ -1,5 +1,5 @@
 /* reset */
-* { margin: 0; padding: 0; -webkit-text-size-adjust: none; word-break: keep-all }
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; word-break: keep-all; }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input,select,option { margin: 0; padding: 0; border: 0; font-size: 100%; font-family: 'Montserrat','NotoKr', sans-serif; text-decoration: none; color: #000;}
 body{ cursor: url(../img/cursor-pointer.png),auto;}
 a{ cursor: url(../img/cursor-hand.png),auto;}
@@ -54,71 +54,66 @@ a{ cursor: url(../img/cursor-hand.png),auto;}
 	font-style: normal;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
   }
-
-  /* 주영월드 타이틀 바 */
-  @font-face {
-	font-family: 'Pacifico';
-	src: url('../font/Pacifico-Regular.eot');
-	src: url('../font/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
-		 url('../font/Pacifico-Regular.svg#Pacifico-Regular') format('svg'),
-		 url('../font/Pacifico-Regular.ttf') format('truetype'),
-		 url('../font/Pacifico-Regular.woff') format('woff'),
-		 url('../font/Pacifico-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-  }
   
-
-  /* call text */
-  @font-face {
+/* call text */
+@font-face {
 	font-family: 'Montserratcall';
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
 	src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
-  }
-  @font-face {
+}
+@font-face {
 	font-family: 'Montserratcall';
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
 	src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
-  }
-  
-	@font-face {
-		font-family: 'Eina03-Light';
-		src: url("../font/Eina03-Light.eot");
-		src: url("../font/Eina03-Light.eot") format("embedded-opentype");
-		src: url("../font/Eina03-Light.woff") format("woff");
-		src: url("../font/Eina03-Light.woff2") format("woff2");
-		font-style: normal;
-	}
-	@font-face {
-		font-family: 'Eina03-Regular';
-		src: url("../font/Eina03-Regular.eot");
-		src: url("../font/Eina03-Regular.eot") format("embedded-opentype");
-		src: url("../font/Eina03-Regular.woff") format("woff");
-		src: url("../font/Eina03-Regular.woff2") format("woff2");
-		font-style: normal;
-	}
-	@font-face {
-		font-family: 'Eina03-SemiBold';
-		src: url("../font/Eina03-SemiBold.eot");
-		src: url("../font/Eina03-SemiBold.eot") format("embedded-opentype");
-		src: url("../font/Eina03-SemiBold.woff") format("woff");
-		src: url("../font/Eina03-SemiBold.woff2") format("woff2");
-		font-style: normal;
-	}
-	
-	  
-  
-	@font-face {
-		font-family: 'Rubik';
-		font-weight: normal;
-		font-style: normal;
-		src: url('../font/Rubik-Regular.eot');
-		src: url('../font/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
-			url('../font/Rubik-Regular.woff') format('woff'),
-			url('../font/Rubik-Regular.woff2') format('woff2');
-	}
+}
 
+@font-face {
+	font-family: 'Eina03-Light';
+	src: url("../font/Eina03-Light.eot");
+	src: url("../font/Eina03-Light.eot") format("embedded-opentype");
+	src: url("../font/Eina03-Light.woff") format("woff");
+	src: url("../font/Eina03-Light.woff2") format("woff2");
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Eina03-Regular';
+	src: url("../font/Eina03-Regular.eot");
+	src: url("../font/Eina03-Regular.eot") format("embedded-opentype");
+	src: url("../font/Eina03-Regular.woff") format("woff");
+	src: url("../font/Eina03-Regular.woff2") format("woff2");
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Eina03-SemiBold';
+	src: url("../font/Eina03-SemiBold.eot");
+	src: url("../font/Eina03-SemiBold.eot") format("embedded-opentype");
+	src: url("../font/Eina03-SemiBold.woff") format("woff");
+	src: url("../font/Eina03-SemiBold.woff2") format("woff2");
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../font/Rubik-Regular.eot');
+	src: url('../font/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/Rubik-Regular.woff') format('woff'),
+		url('../font/Rubik-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pacifico';
+	src: url('../font/Pacifico-Regular.eot');
+	src: url('../font/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../font/Pacifico-Regular.svg#Pacifico-Regular') format('svg'),
+			url('../font/Pacifico-Regular.ttf') format('truetype'),
+			url('../font/Pacifico-Regular.woff') format('woff'),
+			url('../font/Pacifico-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}

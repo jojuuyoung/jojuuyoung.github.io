@@ -32,8 +32,8 @@
     <!-- //title bar -->
 
     <!-- top btn -->
-    <a id="top-btn">
-        <span>👆🏻</span>
+    <a id="top-btn" href="">
+        <span class="top-txt"></span>
     </a>
     <!-- //top btn -->
 
@@ -84,33 +84,6 @@
         <!-- 스킬 소개 -->
         <section class="section" id="skill">
             <h2 class="type">skill</h2>
-            <!-- <div class="skill01">
-                <h2>my skill is</h2>
-                <ul class="skillbox">
-                    <li>
-                        <a>HTML5<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>CSS3<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>JavaScript<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>GIT<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>responsive web<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>LAYOUT<span>설명</span></a>
-                    </li>
-                    <li>
-                        <a>Photoshop<span>설명</span></a>
-                    </li>
-                </ul>
-            </div> -->
-            
             <div class="skillwrap">
                 <div class="skill01">
                     <p class="text01">my skill is</p>
@@ -136,7 +109,7 @@
                     <span class="sk18">BOOTSTRAP</span>
                     <span class="sk19">VSCODE</span>
                 </div>
-            </div>    
+            </div>     
         </section>
         <!-- //스킬 소개 -->
 
@@ -149,8 +122,8 @@
                 <!-- swiper-wrapper -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <!-- <div class="swiper_wrap">
-                            <div class="img">
+                        <div class="swiper_wrap">
+                            <div class="swiper_img">
                                 <a href="https://www.stayjungle.com/" alt="스테이정글 바로가기" target="blank"><img src="./img/ex011.jpg" alt="스테이정글 이미지"></a>
                             </div>
                             <div class="swiper_txt">
@@ -161,11 +134,11 @@
                                 </span>
                                 <span class="subtxt">responsive web & HTML5 & CSS3 & JS</span>
                             </div>
-                        </div>     -->
+                        </div>    
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
-                            <div class="img">
+                            <div class="swiper_img">
                                 <a alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex033.jpg" alt="현대엘리베이터 이미지"></a>
                             </div> 
                             <div class="swiper_txt swiper_txt02">
@@ -180,7 +153,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
-                            <div class="img">
+                            <div class="swiper_img">
                                 <a href="http://jojuuyoung.dothome.co.kr/" alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex022.jpg" alt="한샘이펙스 이미지"></a>
                             </div> 
                             <div class="swiper_txt">
@@ -198,8 +171,8 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-white"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-black"><span class="hide">다음</span></div>
-                <div class="swiper-button-prev swiper-button-black"><span class="hide">이전</span></div>
+                <!-- <div class="swiper-button-next swiper-button-black"><span class="hide">다음</span></div>
+                <div class="swiper-button-prev swiper-button-black"><span class="hide">이전</span></div> -->
             </div>
         </section>
         <!-- //swiper-container -->
@@ -224,7 +197,7 @@
 
         <!-- 연락처 -->
         <section class="section" id="call">
-            <h2 class="type">watching for<br>thank you ☺</h2>
+            <h2 class="type">watching for<br>thank you<i>!</i></h2>
             <div class="call_wrap">
                 <p>SENDME<a href="" class="hover">&nbsp;@EMAIL</a></p>
                 <p><a href="tel:010-2456-3353" class="hover">01024563353</a>&nbsp;CALL</p>
@@ -238,34 +211,17 @@
     <!-- fullpage script -->
     <script>
         new fullpage('#fullpage', {
-            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            licenseKey: '',
             // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
             // sectionsColor: ['#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f'],//겨자색배경컬러
             // sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
             // sectionsColor: ['#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba'],//찐핑크배경컬러
             sectionsColor: ['#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9'],//민트배경컬러
             navigation: true,//오른쪽 도트 네비게이션
-            navigationTooltips: ['main','who','skill','site','contact'],//네비게이션 후버 텍스트
+            navigationTooltips: ['main','who','skill','project','contact'],//네비게이션 후버 텍스트
             scrollingSpeed: 1000,//스크롤속도
-            loopBottom: true,//마지막 페이지에서 스크롤하면 젤 처음페이지로 올라가는 옵션
-            
-            // onLeave: function(origin, destination, direction){
-            //     if(origin.index == 0){
-            //         $('.who .about').hide();
-            //     }
-            //     if(origin.index == 2){
-            //         $('.who .about').hide();
-            //     }
-            // },//스크롤이 시작할 때 실행, origin 원래있던섹션 destination 이동하는섹션 direction 스크롤방향
-            // afterLoad: function(origin, destination, direction){
-            //     if(destination.index == 1){
-            //         //index가 1번 일 경우
-            //         $('.who .about').show();
-            //     }
-            // }//스크롤이 끝날 때 실행
-
+            continuousVertical: true,//마지막 구역에서 아래로 스크롤할때 첫번째 구역으로 스크롤
         });
-
             //마우스 오버하면 텍스트섀도우 js
             // $('.about').mousemove(function(e){
             //     var rXP = (e.pageX - this.offsetLeft-$(this).width()/2);
