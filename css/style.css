@@ -356,7 +356,7 @@
 
 /* section project */
 .swiper-pagination-white{
-    --swiper-pagination-color: #00e693 !important;
+    --swiper-pagination-color: #00dd8ce1 !important;
 }
 .swiper-container {
     width: 95vw;
