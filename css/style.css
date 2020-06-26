@@ -732,11 +732,13 @@
         font-size: 16px;
     }
     #top-btn{
-        width: 35px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
+        right: 5vw;
+        bottom: 6vw;
     }
     #top-btn span{
-        font-size: 35px;
+        font-size: 16px;
     }
 
 }
@@ -854,11 +856,14 @@
     font-size: 14px;
 }
 #top-btn{
-    width: 28px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
+    right: 7vw;
+    bottom: 10vw;
+}
 }
 #top-btn span{
-    font-size: 25px;
+    font-size: 14px;
 }
 
 
