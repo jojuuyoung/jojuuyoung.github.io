@@ -89,15 +89,16 @@
 #top-btn{
     position: fixed;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     right: 4vw;
     bottom: 4vw;
     z-index: 13;
 }
-#top-btn::after{
+#top-btn::before{
     content: '';
     display: block;
+    position: relative;
     width: 100%;
     height: 100%;
     background-image: url(../img/topbtn02.png); 
@@ -118,6 +119,15 @@
     100% {
         transform: rotate(360deg)
     }
+}
+.top-txt{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    color: #fff;
+    font-family: 'Rubik';
 }
 /* //top 버튼 */
 
