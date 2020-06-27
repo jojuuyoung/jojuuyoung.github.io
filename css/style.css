@@ -89,8 +89,8 @@
 #top-btn{
     position: fixed;
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 80px;
     right: 4vw;
     bottom: 4vw;
     z-index: 13;
@@ -416,6 +416,10 @@
     flex-direction: column;
     align-items: center;
 }
+.skill01,.skill02{
+    width: 70%;
+    background-color: ;
+}
 /* //section skill */
 
 /* section project */
@@ -675,6 +679,9 @@
         height: 180px;
         background-size: contain;
     }
+    .skill01,.skill02{
+        width: 75%;
+    }
     /* section site */
     .swiper_wrap .swiper_img{
         width: 40vw;
@@ -759,6 +766,9 @@
         width: 90vw;
         height: 88vh;
     }
+    .skill01,.skill02{
+        width: 80%;
+    }
     .swiper_wrap{
         display: block;
         width: 100%;
@@ -807,7 +817,7 @@
     }
     #top-btn{
         width: 65px;
-        height: 65px;
+        height: 70px;
         right: 5vw;
         bottom: 6vw;
     }
@@ -900,6 +910,9 @@
         transform: rotate(-30deg)translateY(200px)translateX(0px)
     }
 }
+.skill01,.skill02{
+    width: 80%;
+}
 .swiper-container{
     width: 90vw;
     height: 88vh;
@@ -951,8 +964,8 @@
     font-size: 14px;
 }
 #top-btn{
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 58px;
     right: 5vw;
     bottom: 10vw;
 }
