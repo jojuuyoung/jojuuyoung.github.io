@@ -34,6 +34,7 @@
     top: 0;
 }
 /* //배경 그리드 */
+
 /*네이게이션 백그라운드 컬러*/
 #fp-nav{
     display: block;
@@ -86,7 +87,7 @@
 /* //주영 월드 titleBar */
 
 /* top 버튼 */
-#top-btn{
+.topbtn{
     position: fixed;
     display: block;
     width: 75px;
@@ -95,32 +96,27 @@
     bottom: 4vw;
     z-index: 13;
 }
-#top-btn::before{
+.topbtn::before{
     content: '';
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../img/topbtn02.png); 
+    background-image: url(../IMG/pink_top.png); 
     background-repeat: no-repeat;
     background-size: 100% auto;
-    animation: topbtnrotate 11s;
-   -webkit-animation: topbtnrotate 11s;
+    animation: anitopbtn 11s;
+   -webkit-animation: anitopbtn 11s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear;
 }
-@keyframes topbtnrotate{
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(360deg)
-    }
+@keyframes anitopbtn{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-.top-txt{
+.toptxt{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -190,15 +186,15 @@
     width: 100vw;
     height: 100vh;
 }
-.circle{
+.circle_bg{
     position: absolute; 
     z-index: 11;
     top: 50%;
     transform: translateY(-50%);
     width: 49vw;
     height: 49vw; /*height: 100vh;*/
-    background-image: url(../img/circle.png), url(../img/imog.png);
-    background-size: 100%, 70%;
+    background-image: url(../IMG/circle_bg.png), url(../IMG/cir_imog.png);
+    background-size: 100%, 40%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
 }
@@ -207,16 +203,14 @@
     z-index: 12;
     width: 49vw; 
     height: 49vw; /*height: 12em;*/
-    animation-name: circle;
+    animation-name: circletxt;
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     font-size: 4.1vw;
 }
-@keyframes circle{
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes circletxt{
+    100%{ transform: rotate(360deg); }
 }
 .circle_txt span{
     position: absolute;
@@ -303,36 +297,28 @@
 /* //section main */
 
 /* section who */
-.who_wrap{
+.about_wrap{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/object.png);
+    background-image: url(../IMG/about_bg.png);
     background-repeat: no-repeat;
     background-size: 52% auto;
     background-position: center center;
 }
-.about::before{
+.about_txt::before{
     content: '';
     display: block;
     width: 3.5vw;
     height: 3.5vw;
     margin: 0 auto;
-    background-image: url(../img/about.png);
+    background-image: url(../IMG/about.png);
     background-repeat: no-repeat;
     background-size: contain;
-    /* animation: hand 1s linear infinite;
-    -webkit-animation: hand 1s linear infinite;
-    transform: rotate(25deg); */
 }
-/* @keyframes hand{
-    0% {transform: rotate(-15deg);}
-    50% {transform: rotate(25deg);}
-    100%{transform: rotate(-15deg);}
-} */
-.about{
+.about_txt{
     position: relative; /*mark01 기준점*/
     text-align: center;
     font-size: 4.5vw;
@@ -340,7 +326,7 @@
     line-height: 1.2;
     z-index: 11;
 }
-.mark01{
+.mark{
     position: absolute;
     bottom: -20%;
     right: 20%;
@@ -348,13 +334,13 @@
     font-weight: 500;
     letter-spacing: -1px;
 }
-.mark01::before{
+.mark::before{
     content: '';
     display: inline-block;
     vertical-align: middle;
     width: 90px;
     height: 19px;
-    background-image: url(../img/unnamed02.png);
+    background-image: url(../IMG/about_mark.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 1vw;
@@ -423,16 +409,16 @@
 /* //section skill */
 
 /* section project */
-.swiper-pagination-white{
-    --swiper-pagination-color: #00dd8ce1 !important;
-}
-.swiper-container {
+.swiper-container{
     width: 95vw;
     height: 90vh;
     background-color: #fff;
-    background-image: url(../img/noise.png);
+    background-image: url(../IMG/noise_bg.png);
 }
-.swiper-slide {
+.swiper-pagination-white{
+    --swiper-pagination-color: #ef6b84 !important;
+}
+.swiper-slide{
     text-align: center;
     font-size: 18px;
     /* Center slide text vertically */
@@ -448,24 +434,6 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-.swiper-button-prev{
-    width: 20px !important;
-    height: 25px !important;
-    background-size: 20px 25px !important;
-    /* bottom: 20% !important;
-    left: 58vw !important; */
-    margin-top: 0 !important;
-    z-index: 15 !important;
-}
-.swiper-button-next{
-    width: 20px !important;
-    height: 25px !important;
-    background-size: 20px 25px !important;
-    /* bottom: 20% !important;
-    right: 33vw !important; */
-    margin-top: 0 !important;
-    z-index: 15 !important;
 }
 .swiper_wrap{
     display: flex;
@@ -497,12 +465,6 @@
     position: relative;
     padding-left: 8vw;
     box-sizing: border-box;
-    /* z-index: 11; */
-    /* position: absolute;
-    bottom: 20%;
-    left: 50vw; */
-    /* transform: translateX(-50%);
-    z-index: 11; */
 }
 .swiper_txt span{
     display: block;
@@ -527,7 +489,7 @@
     content: '';
     width: 0;
     height: 15px;
-    background-color: #00e693;
+    background-color: #ef6b84;
     transition: width 0.5s;
     -webkit-transition: width 0.5s;
 }
@@ -559,10 +521,6 @@
 /* section call */
 .call_wrap{
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     z-index: 12;
     padding: 0 10vw;
 }
@@ -574,12 +532,11 @@
     font-weight: bold;
     font-size: 8.35vw;
     color: #fff;
-    /* background-color: silver; */
 }
 .call_wrap p:first-child{
     font-size: 8.65vw;
 }
-.call_wrap .hover{
+.call_wrap .border{
     font-family: 'Montserratcall', sans-serif;
     cursor: pointer;
     background: transparent;
@@ -587,9 +544,9 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
-    cursor: url(../img/cursor-hand.png),auto;
+    cursor: url(../IMG/cursor-hand.png),auto;
 }
-.call_wrap .hover:hover{
+.call_wrap .border:hover{
     -webkit-text-fill-color: #000;
     -webkit-text-stroke-color: transparent;
     color: #000;
@@ -614,25 +571,13 @@
     font-weight: 700;
     font-size: 18px;
 }
-@keyframes heartbeat {
-    0% {
-        transform: scale(.9)
-    }
-    20% {
-        transform: scale(1.2)
-    }
-    40% {
-        transform: scale(.9)
-    }
-    60% {
-        transform: scale(1.2)
-    }
-    80% {
-        transform: scale(.9)
-    }
-    100% {
-        transform: scale(.9)
-    }
+@keyframes heartbeat{
+    0%{ transform: scale(.9); }
+    20%{ transform: scale(1.2); }
+    40%{ transform: scale(.9); }
+    60%{ transform: scale(1.2); }
+    80%{ transform: scale(.9); }
+    100%{ transform: scale(.9); }
 }
 /* //section call */
 

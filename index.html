@@ -22,20 +22,19 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <!-- prefix JS -->
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
-    <!-- <link rel="stylesheet" href="css/excss.css"> -->
 </head>
 <body>
-    <!-- title bar -->
+    <!-- titlebar -->
     <div class="titleBar">
         <a href="index.html">Ju Young<br>World</a>
     </div>
-    <!-- //title bar -->
+    <!-- //titlebar -->
 
-    <!-- top btn -->
-    <a id="top-btn" a href="javascript:void(0);">
-        <span class="top-txt">TOP</span>
+    <!-- topbtn -->
+    <a class="topbtn" a href="javascript:void(0);">
+        <span class="toptxt">TOP</span>
     </a>
-    <!-- //top btn -->
+    <!-- //topbtn -->
 
     <!-- fullpage -->
     <div id="fullpage">
@@ -45,7 +44,7 @@
             <p class="tag01">I hope to meet you soon<br><i>@publisher</i></p>
             <p class="tag02">welcome to<br>ju young<br>world !</p>
             <div class="circle_wrap">
-                <div class="circle"><span class="hide">써클이미지</span></div>
+                <div class="circle_bg"><span class="hide">써클이미지</span></div>
                 <h1 class="circle_txt">
                     <span class="t1">W</span>
                     <span class="t2">E</span>
@@ -69,13 +68,13 @@
         <!-- 소개 -->
         <section class="section" id="who">
             <h2 class="type">about me</h2>
-            <div class="who_wrap">
-                <p class="about">
+            <div class="about_wrap">
+                <p class="about_txt">
                     <span>조주영 JoJuYoung .920510</span><br>
                     <span>단국대 경영학과 #웹디자인기능사</span><br>
                     <span>강남 굿잡아카데이 수료</span><br>
                     <span>19.09 ~ 20.05 웹에이전시 더넷 근무</span>
-                    <span class="mark01">ABOUT JUYOUNG</span>
+                    <span class="mark">ABOUT JUYOUNG</span>
                 </p>
             </div>
         </section>
@@ -119,15 +118,17 @@
         <!-- 프로젝트 -->
         <section class="section" id="project">
             <h2 class="type">project is</h2>
-
             <!-- swiper-container -->
             <div class="swiper-container">
                 <!-- swiper-wrapper -->
                 <div class="swiper-wrapper">
+                    <!-- swiper-slide -->
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
                             <div class="swiper_img">
-                                <a href="https://www.stayjungle.com/" alt="스테이정글 바로가기" target="blank"><img src="./img/ex011.jpg" alt="스테이정글 이미지"></a>
+                                <a href="https://www.stayjungle.com/" alt="스테이정글 바로가기" target="blank">
+                                    <img src="./IMG/stayjungle.jpg" alt="스테이정글 이미지">
+                                </a>
                             </div>
                             <div class="swiper_txt">
                                 <span class="ptype">project website #01</span>
@@ -139,25 +140,33 @@
                             </div>
                         </div>    
                     </div>
+                    <!-- //swiper-slide -->
+                    <!-- swiper-slide -->
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
                             <div class="swiper_img">
-                                <a alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex033.jpg" alt="현대엘리베이터 이미지"></a>
+                                <a alt="현대엘리베이터 바로가기" target="blank">
+                                    <img src="./IMG/hyundai.jpg" alt="현대엘리베이터 이미지">
+                                </a>
                             </div> 
                             <div class="swiper_txt swiper_txt02">
                                 <span class="ptype">project website #02</span>
                                 <span class="subtit">현대 엘리베이터<br>관리자 웹사이트 구축</span>
                                 <span class="tit">
-                                    <a alt="한샘이펙스 바로가기" target="blank" class="border">현대엘리베이터 .</a>
+                                    <a alt="현대엘리베이터 바로가기" target="blank" class="border">현대엘리베이터 .</a>
                                 </span>
                                 <span class="subtxt">responsive web & HTML5 & CSS3 & JS</span>
                             </div>
                         </div>    
                     </div>
+                    <!-- //swiper-slide -->
+                    <!-- swiper-slide -->
                     <div class="swiper-slide">
                         <div class="swiper_wrap">
                             <div class="swiper_img">
-                                <a href="http://jojuuyoung.dothome.co.kr/" alt="한샘이펙스 바로가기" target="blank"><img src="./img/ex022.jpg" alt="한샘이펙스 이미지"></a>
+                                <a href="http://jojuuyoung.dothome.co.kr/" alt="한샘이펙스 바로가기" target="blank">
+                                    <img src="./IMG/hanssem.jpg" alt="한샘이펙스 이미지">
+                                </a>
                             </div> 
                             <div class="swiper_txt">
                                 <span class="ptype">copy website #01</span>
@@ -169,13 +178,11 @@
                             </div>
                         </div>    
                     </div>
+                    <!-- //swiper-slide -->
                 </div>
                 <!-- //swiper-wrapper -->
                 <!-- Add Pagination -->
                 <div class="swiper-pagination swiper-pagination-white"></div>
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next swiper-button-black"><span class="hide">다음</span></div>
-                <div class="swiper-button-prev swiper-button-black"><span class="hide">이전</span></div> -->
             </div>
         </section>
         <!-- //swiper-container -->
@@ -186,8 +193,7 @@
                 // direction: 'vertical',
                 pagination: {
                     el: '.swiper-pagination',
-                    type: 'progressbar',
-                    // type: 'fraction', //숫자
+                    type: 'progressbar', //진행바
                 },
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -202,8 +208,8 @@
         <section class="section" id="call">
             <h2 class="type">watching for<br>thank you<i>!</i></h2>
             <div class="call_wrap">
-                <p>SENDME<a href="" class="hover">&nbsp;@EMAIL</a></p>
-                <p><a href="tel:010-2456-3353" class="hover">01024563353</a>&nbsp;CALL</p>
+                <p>SENDME<a href="" class="border">&nbsp;@EMAIL</a></p>
+                <p><a href="tel:010-2456-3353" class="border">01024563353</a>&nbsp;CALL</p>
             </div>
             <div class="bytag">WebSite by JuYoung</div>
         </section>
@@ -215,11 +221,11 @@
     <script>
         new fullpage('#fullpage', {
             licenseKey: '',
-            // sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
+            sectionsColor: ['#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9', '#eaa9a9'],//베이비핑크배경컬러
+            // sectionsColor: ['#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9'],//민트배경컬러
             // sectionsColor: ['#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f', '#e5c44f'],//겨자색배경컬러
             // sectionsColor: ['#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb', '#8dc4eb'],//소라색배경컬러
             // sectionsColor: ['#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba', '#f0a6ba'],//찐핑크배경컬러
-            sectionsColor: ['#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9', '#8bd3b9'],//민트배경컬러
             navigation: true,//오른쪽 도트 네비게이션
             navigationTooltips: ['main','who','skill','project','contact'],//네비게이션 후버 텍스트
             scrollingSpeed: 1000,//스크롤속도
