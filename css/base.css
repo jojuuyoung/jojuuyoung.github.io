@@ -102,7 +102,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../IMG/pink_top.png); 
+    background-image: url(../img/pink_top.png); 
     background-repeat: no-repeat;
     background-size: 100% auto;
     animation: anitopbtn 11s;
@@ -193,7 +193,7 @@
     transform: translateY(-50%);
     width: 49vw;
     height: 49vw; /*height: 100vh;*/
-    background-image: url(../IMG/circle_bg.png), url(../IMG/cir_imog.png);
+    background-image: url(../img/circle_bg.png), url(../img/cir_imog.png);
     background-size: 100%, 40%;
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -303,7 +303,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../IMG/about_bg.png);
+    background-image: url(../imh/about_bg.png);
     background-repeat: no-repeat;
     background-size: 52% auto;
     background-position: center center;
@@ -314,7 +314,7 @@
     width: 3.5vw;
     height: 3.5vw;
     margin: 0 auto;
-    background-image: url(../IMG/about.png);
+    background-image: url(../img/about.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -340,7 +340,7 @@
     vertical-align: middle;
     width: 90px;
     height: 19px;
-    background-image: url(../IMG/about_mark.png);
+    background-image: url(../img/about_mark.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 1vw;
@@ -358,7 +358,7 @@
     z-index: 15;
     right: 8vw;
     top: 6vw;
-    background-image: url(../IMG/anibg01.png);
+    background-image: url(../img/anibg01.png);
     background-repeat: no-repeat;
     background-size: auto;
     animation: anibg01 4s both cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
@@ -375,7 +375,7 @@
     left: 6vw;
     bottom: 15%;
     z-index: 15;
-    background-image: url(../IMG/anibg02.png);
+    background-image: url(../img/anibg02.png);
     background-repeat: no-repeat;
     background-size: auto;
     animation: anibg02 7s both cubic-bezier(0.4, 0, 1, 1) infinite;
@@ -415,7 +415,7 @@
     width: 95vw;
     height: 90vh;
     background-color: #fff;
-    background-image: url(../IMG/noise_bg.png);
+    background-image: url(../img/noise_bg.png);
 }
 .swiper-pagination-white{
     --swiper-pagination-color: #ef6b84 !important;
@@ -546,7 +546,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
-    cursor: url(../IMG/cursor-hand.png),auto;
+    cursor: url(../img/cursor-hand.png),auto;
 }
 .call_wrap .border:hover{
     -webkit-text-fill-color: #000;
