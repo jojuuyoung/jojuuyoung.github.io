@@ -1,0 +1,338 @@
+/* 미디어쿼리 */
+@media all and (max-width:1023px){ 
+    /*가로값이 1023px이하 일 때 스타일 적용! 1024px이상은 적용 안됨*/
+        .titleBar{
+            top: 12vw;
+        }
+        /* section main */
+        #main p{
+            font-size: 16px;
+        }    
+        .circle_bg{
+            width: 53vw;
+            height: 53vw;
+            background-size: 100%, 42%;
+        }
+        .circle_txt{
+            width: 53vw;
+            height: 53vw;
+            font-size: 4.45vw;
+        }
+        /* section who */
+        .about_wrap{
+            background-size: 60% auto;
+        }
+        .about_txt{
+            font-size: 5vw;
+        }
+        .about_txt::before{
+            width: 4.5vw;
+            height: 4.5vw;
+        }
+        /* section skill */
+        .anibg01{
+            width: 180px;
+            height: 180px;
+            background-size: contain;
+        }
+        .anibg02{
+            width: 180px;
+            height: 180px;
+            background-size: contain;
+        }
+        .skill01,.skill02{
+            width: 75%;
+        }
+        /* section site */
+        .swiper_wrap .swiper_img{
+            width: 40vw;
+            height: 40vw;
+        }
+        .swiper_txt{
+            padding-left: 5vw;
+        }
+        .swiper_txt .subtit{
+            font-size: 48px;
+        }
+        .swiper_txt .tit{
+            font-size: 48px;
+        }
+        /* section call */
+        .call_wrap{
+            padding: 0 5vw;
+        }
+        .call_wrap p:first-child{
+            font-size: 9.74vw;
+        }
+        .call_wrap p{
+            font-size: 9.4vw;
+        }
+    
+    }
+    
+    @media all and (max-width:767px){ 
+    /*가로값이 767px이하 일 때 스타일 적용! 768px이상은 적용 안됨*/
+        .titleBar{
+            top: 18vw;
+        }
+        .topbtn{
+            width: 65px;
+            height: 70px;
+            right: 5vw;
+            bottom: 6vw;
+        }
+        .topbtn span{
+            font-size: 16px;
+        }
+        /* section main */
+        .tag02{
+            bottom: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .circle_bg{
+            width: 60vw;
+            height: 60vw;
+            background-size: 100%, 40%;
+        }
+        .circle_txt{
+            width: 60vw;
+            height: 60vw;
+            font-size: 5vw;
+        }
+        /* section who */
+        .type{
+            top: 2vw;
+            font-size: 24px;
+        }
+        .about_wrap{
+            background-size: 75% auto;
+        }
+        .about_txt{
+            font-size: 6vw;
+        }
+        .about_txt::before {
+            width: 6.5vw;
+            height: 6.5vw;
+        }
+        .mark{
+            font-size: 15px;
+        }
+        .mark::before{
+            width: 60px;
+            height: 15px;
+        }
+        /* section skill */
+        .anibg01{
+            width: 150px;
+            height: 150px;
+        }
+        .anibg02{
+            width: 150px;
+            height: 150px;
+        }
+        /* section site */
+        .swiper-container{
+            width: 90vw;
+            height: 88vh;
+        }
+        .skill01,.skill02{
+            width: 80%;
+        }
+        .swiper_wrap{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .swiper_wrap .swiper_img{
+            width: 100%;
+            height: 50%;
+        }
+        .swiper_wrap .swiper_img img{
+            width: 100%;
+            height: 100%;
+        }
+        .swiper_txt{
+            width: 100%;
+            height: 50%;
+            padding: 12vw 8vw;
+        }
+        .swiper_txt .subtit {
+            font-size: 36px;
+        }
+        .swiper_txt:hover .tit::after{
+            width: 53%;
+        }
+        .swiper_txt02:hover .tit::after{
+            width: 70%;
+        }
+        .swiper_txt .tit {
+            font-size: 36px;
+        }
+        .swiper_txt .subtxt{
+            font-size: 16px;
+        }
+        /* section call */
+        .call_wrap {
+            padding: 0 5vw;
+        }
+        .call_wrap p:first-child {
+            font-size: 9.74vw;
+        }
+        .call_wrap p {
+            font-size: 9.4vw;
+        }
+        .bytag{
+            font-size: 16px;
+        }
+    }
+    
+    @media all and (max-width:479px){
+    /*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
+    .titleBar{
+        top: 25vw;
+    }
+    .titleBar a{
+        line-height: 1.2;
+        font-size: 14px;
+    }
+    .titleBar::before{
+        height: 34px;
+    }
+    .topbtn{
+        width: 54px;
+        height: 58px;
+        right: 5vw;
+        bottom: 10vw;
+    }
+    .topbtn span{
+        font-size: 13px;
+    }
+    #main p{
+        font-size: 16px;
+    }
+    .year{
+        font-size: 14px;
+        display: none;
+    }
+    .tag01{
+        right: 7vw;
+        top: 18vh;
+    }
+    .tag02{
+        bottom: 18vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .circle_bg{
+        width: 65vw;
+        height: 65vw;
+        background-size: 100%, 40%;
+    }
+    .circle_txt{
+        width: 65vw;
+        height: 65vw;
+        font-size: 5.4vw;
+    }
+    
+    .type{
+        top: 3vw;
+        font-size: 18px;
+    }
+    .about_wrap{
+        background-size: 90% auto;
+    }
+    .about_txt{
+        font-size: 6.2vw;
+    }
+    .about_txt::before{
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+    .mark{
+        bottom: -30%;
+        font-size: 14px;
+    }
+    .mark::before{
+        width: 50px;
+        height: 14px;
+    }
+    .anibg01{
+        width: 120px;
+        height: 120px;
+        right: 10vw;
+        top: 17vw;
+    }
+    .anibg02{
+        width: 120px;
+        height: 120px;
+        animation: anibg02 5s both cubic-bezier(0.4, 0, 1, 1) infinite;
+    }
+    @keyframes anibg02{
+        0% {
+            transform: rotate(-30deg)translateY(200px)translateX(0px);
+        }
+        50% {
+            transform: rotate(-30deg)translateY(-200px)translateX(0px)
+        }
+        100% {
+            transform: rotate(-30deg)translateY(200px)translateX(0px)
+        }
+    }
+    .skill01,.skill02{
+        width: 80%;
+    }
+    .swiper-container{
+        width: 90vw;
+        height: 88vh;
+    }
+    .swiper_wrap{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_wrap .swiper_img{
+        width: 100%;
+        height: 50%;
+    }
+    .swiper_wrap .swiper_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper_txt{
+        width: 100%;
+        height: 50%;
+        padding: 10vw 5vw;
+    }
+    .swiper_txt .ptype{
+        font-size: 14px;
+    }
+    .swiper_txt .subtit{
+        font-size: 30px;
+    }
+    .swiper_txt .tit{
+        font-size: 30px;
+    }
+    .swiper_txt .subtxt{
+        font-size: 14px;
+    }
+    
+    .call_wrap{
+        padding: 0 3vw;
+    }
+    .call_wrap .border{
+        -webkit-text-stroke-width: 1px;
+    }
+    .call_wrap p:first-child{
+        font-size: 10.15vw;
+    }
+    .call_wrap p{
+        font-size: 9.8vw;
+    }
+    .bytag{
+        font-size: 14px;
+    }
+    
+    
+    }
+    
