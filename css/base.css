@@ -215,7 +215,7 @@
 .circle_txt span{
     position: absolute;
     font-family: 'Montserratcall';
-    font-weight: 400;
+    font-weight: 500;
     color: #fff;
     font-size:2em;
     transform-origin: center;
@@ -358,21 +358,15 @@
     z-index: 15;
     right: 8vw;
     top: 6vw;
-    background-image: url(../img/ooo1.png);
+    background-image: url(../IMG/anibg01.png);
     background-repeat: no-repeat;
     background-size: auto;
     animation: anibg01 4s both cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
 }
 @keyframes anibg01{
-    0% {
-        transform: rotate(-10deg)translateY(0px)translateX(0px);
-    }
-    50% {
-        transform: rotate(10deg)translateY(0px)translateX(10px)
-    }
-    100% {
-        transform: rotate(-10deg)translateY(0px)translateX(0px)
-    }
+    0%{ transform: rotate(-10deg)translateY(0px)translateX(0px); }
+    50% { transform: rotate(10deg)translateY(0px)translateX(10px); }
+    100% { transform: rotate(-10deg)translateY(0px)translateX(0px); }
 }
 .anibg02{
     width: 245px;
@@ -381,31 +375,39 @@
     left: 6vw;
     bottom: 15%;
     z-index: 15;
-    background-image: url(../img/ooo2.png);
+    background-image: url(../IMG/anibg02.png);
     background-repeat: no-repeat;
     background-size: auto;
     animation: anibg02 7s both cubic-bezier(0.4, 0, 1, 1) infinite;
 }
 @keyframes anibg02{
-    0% {
-        transform: rotate(-30deg)translateY(400px)translateX(0px);
-    }
-    50% {
-        transform: rotate(-30deg)translateY(-400px)translateX(0px)
-    }
-    100% {
-        transform: rotate(-30deg)translateY(400px)translateX(0px)
-    }
+    0%{ transform: rotate(-30deg)translateY(400px)translateX(0px); }
+    50%{ transform: rotate(-30deg)translateY(-400px)translateX(0px); }
+    100%{ transform: rotate(-30deg)translateY(400px)translateX(0px); }
 }
 .skillwrap{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 53.5vw;
+    height: 65vh;
+    margin: 0 auto;
+    /* background-color: mediumslateblue; */
 }
-.skill01,.skill02{
-    width: 70%;
-    background-color: ;
+/* .skillwrap{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 15;
+    width: 65vw;
+    height: 65vh;
+    margin: 0 auto;
+    background-color: mediumslateblue;
 }
+.skill_box01{
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+} */
 /* //section skill */
 
 /* section project */
