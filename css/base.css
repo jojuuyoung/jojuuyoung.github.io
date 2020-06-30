@@ -438,6 +438,9 @@
     color: #fff !important;
     background: #ef6b84 !important;
 }
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    cursor: url(../img/cursor-hand.png),auto !important;
+}
 .swiper-slide{
     text-align: center;
     font-size: 18px;
