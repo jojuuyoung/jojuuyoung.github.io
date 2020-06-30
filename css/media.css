@@ -198,6 +198,9 @@
     
     @media all and (max-width:479px){
     /*가로값이 479px이하 일 때 스타일 적용! 480px이상은 적용 안됨*/
+    #fp-nav{
+        display: none;
+    }
     .titleBar{
         top: 25vw;
     }
