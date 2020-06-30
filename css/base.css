@@ -417,8 +417,26 @@
     background-color: #fff;
     background-image: url(../img/noise_bg.png);
 }
-.swiper-pagination-white{
-    --swiper-pagination-color: #ef6b84 !important;
+.swiper-pagination{
+    width: 100% !important;
+    bottom: 1.5vw !important;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000 !important;
+    opacity: 1 !important;
+    background: rgba(199, 196, 196, 0.2) !important;
+    font-family: 'Eina03-SemiBold' !important;
+}
+.swiper-pagination-bullet-active{
+    color: #fff !important;
+    background: #ef6b84 !important;
 }
 .swiper-slide{
     text-align: center;

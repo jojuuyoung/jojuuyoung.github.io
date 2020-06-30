@@ -270,27 +270,27 @@
                 </div>
                 <!-- //swiper-wrapper -->
                 <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-white"></div>
+                <div class="swiper-pagination">
+                    <span>1</span>
+                </div>
             </div>
+            <!-- //swiper-container -->
         </section>
-        <!-- //swiper-container -->
+        <!-- //프로젝트 -->
         <!-- Initialize Swiper -->
         <script>
-            var Swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.swiper-container', {
                 loop:true,
-                // direction: 'vertical',
                 pagination: {
                     el: '.swiper-pagination',
-                    type: 'progressbar', //진행바
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + '</span>';
+                    },
                 },
             });
         </script>
         <!-- //Initialize Swiper -->
-        <!-- //프로젝트 -->
 
         <!-- 연락처 -->
         <section class="section" id="call">

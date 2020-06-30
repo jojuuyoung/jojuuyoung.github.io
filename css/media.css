@@ -45,6 +45,9 @@
             width: 75%;
         }
         /* section site */
+        /* .swiper-pagination {
+            bottom: 5.5vw !important;
+        } */
         .swiper_wrap .swiper_img{
             width: 40vw;
             height: 40vw;
@@ -139,6 +142,9 @@
             width: 90vw;
             height: 88vh;
         }
+        .swiper-pagination{
+            bottom: 2vw !important;
+        }
         .skill01,.skill02{
             width: 80%;
         }
@@ -158,7 +164,7 @@
         .swiper_txt{
             width: 100%;
             height: 50%;
-            padding: 12vw 8vw;
+            padding: 7vw 8vw;
         }
         .swiper_txt .subtit {
             font-size: 36px;
@@ -293,6 +299,9 @@
         display: block;
         width: 100%;
         height: 100%;
+    }
+    .swiper-pagination{
+        bottom: 10vw !important;
     }
     .swiper_wrap .swiper_img{
         width: 100%;
