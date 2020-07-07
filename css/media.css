@@ -439,9 +439,9 @@
 .marquee {
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 30%;
 	width: var(--marquee-width);
-	overflow: hidden;
+	/* overflow: hidden; */
 	pointer-events: none;
 	mix-blend-mode: color-burn;
 }
