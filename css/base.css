@@ -424,11 +424,11 @@
     transform: translateX(-50%); */
 }
 .swiper-pagination-bullet{
-    width: 20px !important;
-    height: 20px !important;
+    width: 25px !important;
+    height: 25px !important;
     text-align: center;
-    line-height: 20px;
-    font-size: 12px;
+    line-height: 25px;
+    font-size: 14px;
     color: #000 !important;
     opacity: 1 !important;
     background: rgba(199, 196, 196, 0.2) !important;
