@@ -79,14 +79,11 @@
         .titleBar{
             top: 18vw;
         }
-        .topbtn{
-            width: 65px;
-            height: 70px;
-            right: 5vw;
-            bottom: 6vw;
-        }
-        .topbtn span{
-            font-size: 16px;
+        .smile_ani{
+            width: 150px;
+            height: 150px;
+            right: -30px;
+            bottom: -45px;
         }
         /* section main */
         .tag02{
@@ -211,14 +208,11 @@
     .titleBar::before{
         height: 34px;
     }
-    .topbtn{
-        width: 54px;
-        height: 58px;
-        right: 5vw;
-        bottom: 10vw;
-    }
-    .topbtn span{
-        font-size: 13px;
+    .smile_ani{
+        width: 100px;
+        height: 100px;
+        right: -20px;
+        bottom: -25px;
     }
     #main p{
         font-size: 16px;
